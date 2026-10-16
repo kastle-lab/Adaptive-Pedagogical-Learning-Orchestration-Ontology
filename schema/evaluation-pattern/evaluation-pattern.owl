@@ -1,17 +1,17 @@
-@prefix : <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix : <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
-@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@base <https://aplo.cs.wright.edu/lod/ontology#> .
+@base <https://kastle-lab.org/aplo/lod/ontology#> .
 
-<https://aplo.cs.wright.edu/lod/ontology> rdf:type owl:Ontology ;
+<https://kastle-lab.org/aplo/lod/ontology> rdf:type owl:Ontology ;
                                                           dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                                           rdfs:comment "Ontology pattern for representing evaluation activities, assessment exercises, evaluation metrics, feedback, responses, and related provenance." .
 
@@ -27,7 +27,7 @@ dcterms:license rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://aplo.cs.wright.edu/lod/ontology#affectsAwarenessObservation
+###  https://kastle-lab.org/aplo/lod/ontology#affectsAwarenessObservation
 aplo-ont:affectsAwarenessObservation rdf:type owl:ObjectProperty ;
                                    owl:inverseOf aplo-ont:isAwarenessObservationAffectedBy ;
                                    rdf:type owl:AsymmetricProperty ,
@@ -38,7 +38,7 @@ aplo-ont:affectsAwarenessObservation rdf:type owl:ObjectProperty ;
                                    rdfs:label "affectsAwarenessObservation" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#affectsStrategy
+###  https://kastle-lab.org/aplo/lod/ontology#affectsStrategy
 aplo-ont:affectsStrategy rdf:type owl:ObjectProperty ;
                        owl:inverseOf aplo-ont:isStrategyAffectedBy ;
                        rdf:type owl:AsymmetricProperty ,
@@ -49,7 +49,7 @@ aplo-ont:affectsStrategy rdf:type owl:ObjectProperty ;
                        rdfs:label "affectsStrategy" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#assessesLearningFeedback
+###  https://kastle-lab.org/aplo/lod/ontology#assessesLearningFeedback
 aplo-ont:assessesLearningFeedback rdf:type owl:ObjectProperty ;
                                 owl:inverseOf aplo-ont:isLearningFeedbackAssessedBy ;
                                 rdf:type owl:AsymmetricProperty ,
@@ -60,7 +60,7 @@ aplo-ont:assessesLearningFeedback rdf:type owl:ObjectProperty ;
                                 rdfs:label "assessesLearningFeedback" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#assessesLearningObjective
+###  https://kastle-lab.org/aplo/lod/ontology#assessesLearningObjective
 aplo-ont:assessesLearningObjective rdf:type owl:ObjectProperty ;
                                  owl:inverseOf aplo-ont:isLearningObjectiveAssessedBy ;
                                  rdf:type owl:AsymmetricProperty ,
@@ -71,7 +71,7 @@ aplo-ont:assessesLearningObjective rdf:type owl:ObjectProperty ;
                                  rdfs:label "assessesLearningObjective" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#evaluatesTopicAwarenessOf
+###  https://kastle-lab.org/aplo/lod/ontology#evaluatesTopicAwarenessOf
 aplo-ont:evaluatesTopicAwarenessOf rdf:type owl:ObjectProperty ;
                                  owl:inverseOf aplo-ont:isTopicAwarenessEvaluatedBy ;
                                  rdf:type owl:AsymmetricProperty ,
@@ -82,7 +82,7 @@ aplo-ont:evaluatesTopicAwarenessOf rdf:type owl:ObjectProperty ;
                                  rdfs:label "evaluatesTopicAwarenessOf" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#hasAssessmentExercise
+###  https://kastle-lab.org/aplo/lod/ontology#hasAssessmentExercise
 aplo-ont:hasAssessmentExercise rdf:type owl:ObjectProperty ;
                              owl:inverseOf aplo-ont:isAssessmentExerciseOf ;
                              rdf:type owl:AsymmetricProperty ,
@@ -97,7 +97,7 @@ aplo-ont:hasAssessmentExercise rdf:type owl:ObjectProperty ;
                              rdfs:label "hasAssessmentExercise" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#hasEvaluationMetric
+###  https://kastle-lab.org/aplo/lod/ontology#hasEvaluationMetric
 aplo-ont:hasEvaluationMetric rdf:type owl:ObjectProperty ;
                            owl:inverseOf aplo-ont:isEvaluationMetricOf ;
                            rdf:type owl:AsymmetricProperty ,
@@ -108,7 +108,7 @@ aplo-ont:hasEvaluationMetric rdf:type owl:ObjectProperty ;
                            rdfs:label "hasEvaluationMetric" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#hasEvaluationTechniqueType
+###  https://kastle-lab.org/aplo/lod/ontology#hasEvaluationTechniqueType
 aplo-ont:hasEvaluationTechniqueType rdf:type owl:ObjectProperty ;
                                   owl:inverseOf aplo-ont:isEvaluationTechniqueTypeOf ;
                                   rdf:type owl:AsymmetricProperty ,
@@ -119,7 +119,7 @@ aplo-ont:hasEvaluationTechniqueType rdf:type owl:ObjectProperty ;
                                   rdfs:label "hasEvaluationTechniqueType" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#hasLearningFeedbackType
+###  https://kastle-lab.org/aplo/lod/ontology#hasLearningFeedbackType
 aplo-ont:hasLearningFeedbackType rdf:type owl:ObjectProperty ;
                                owl:inverseOf aplo-ont:isLearningFeedbackTypeOf ;
                                rdf:type owl:AsymmetricProperty ,
@@ -130,7 +130,7 @@ aplo-ont:hasLearningFeedbackType rdf:type owl:ObjectProperty ;
                                rdfs:label "hasLearningFeedbackType" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#hasResponseTime
+###  https://kastle-lab.org/aplo/lod/ontology#hasResponseTime
 aplo-ont:hasResponseTime rdf:type owl:ObjectProperty ;
                        owl:inverseOf aplo-ont:isResponseTimeOf ;
                        rdf:type owl:AsymmetricProperty ,
@@ -141,7 +141,7 @@ aplo-ont:hasResponseTime rdf:type owl:ObjectProperty ;
                        rdfs:label "hasResponseTime" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#hasSource
+###  https://kastle-lab.org/aplo/lod/ontology#hasSource
 aplo-ont:hasSource rdf:type owl:ObjectProperty ;
                  owl:inverseOf aplo-ont:isSourceOf ;
                  rdf:type owl:AsymmetricProperty ,
@@ -152,7 +152,7 @@ aplo-ont:hasSource rdf:type owl:ObjectProperty ;
                  rdfs:label "hasSource" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#hasUnit
+###  https://kastle-lab.org/aplo/lod/ontology#hasUnit
 aplo-ont:hasUnit rdf:type owl:ObjectProperty ;
                owl:inverseOf aplo-ont:isUnitOf ;
                rdf:type owl:AsymmetricProperty ,
@@ -163,7 +163,7 @@ aplo-ont:hasUnit rdf:type owl:ObjectProperty ;
                rdfs:label "hasUnit" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#hasWorkloadLevel
+###  https://kastle-lab.org/aplo/lod/ontology#hasWorkloadLevel
 aplo-ont:hasWorkloadLevel rdf:type owl:ObjectProperty ;
                         owl:inverseOf aplo-ont:isWorkloadLevelOf ;
                         rdf:type owl:AsymmetricProperty ,
@@ -174,7 +174,7 @@ aplo-ont:hasWorkloadLevel rdf:type owl:ObjectProperty ;
                         rdfs:label "hasWorkloadLevel" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isAssessmentExerciseOf
+###  https://kastle-lab.org/aplo/lod/ontology#isAssessmentExerciseOf
 aplo-ont:isAssessmentExerciseOf rdf:type owl:ObjectProperty ,
                                        owl:AsymmetricProperty ,
                                        owl:IrreflexiveProperty ;
@@ -188,7 +188,7 @@ aplo-ont:isAssessmentExerciseOf rdf:type owl:ObjectProperty ,
                               rdfs:label "isAssessmentExerciseOf" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isAwarenessObservationAffectedBy
+###  https://kastle-lab.org/aplo/lod/ontology#isAwarenessObservationAffectedBy
 aplo-ont:isAwarenessObservationAffectedBy rdf:type owl:ObjectProperty ,
                                                  owl:AsymmetricProperty ,
                                                  owl:IrreflexiveProperty ;
@@ -198,7 +198,7 @@ aplo-ont:isAwarenessObservationAffectedBy rdf:type owl:ObjectProperty ,
                                         rdfs:label "isAwarenessObservationAffectedBy" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isEvaluationMetricOf
+###  https://kastle-lab.org/aplo/lod/ontology#isEvaluationMetricOf
 aplo-ont:isEvaluationMetricOf rdf:type owl:ObjectProperty ,
                                      owl:AsymmetricProperty ,
                                      owl:IrreflexiveProperty ;
@@ -208,7 +208,7 @@ aplo-ont:isEvaluationMetricOf rdf:type owl:ObjectProperty ,
                             rdfs:label "isEvaluationMetricOf" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isEvaluationTechniqueTypeOf
+###  https://kastle-lab.org/aplo/lod/ontology#isEvaluationTechniqueTypeOf
 aplo-ont:isEvaluationTechniqueTypeOf rdf:type owl:ObjectProperty ,
                                             owl:AsymmetricProperty ,
                                             owl:IrreflexiveProperty ;
@@ -218,7 +218,7 @@ aplo-ont:isEvaluationTechniqueTypeOf rdf:type owl:ObjectProperty ,
                                    rdfs:label "isEvaluationTechniqueTypeOf" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isFeedbackProvidedBy
+###  https://kastle-lab.org/aplo/lod/ontology#isFeedbackProvidedBy
 aplo-ont:isFeedbackProvidedBy rdf:type owl:ObjectProperty ;
                             owl:inverseOf aplo-ont:provideFeedback ;
                             rdf:type owl:AsymmetricProperty ,
@@ -229,7 +229,7 @@ aplo-ont:isFeedbackProvidedBy rdf:type owl:ObjectProperty ;
                             rdfs:label "isFeedbackProvidedBy" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isLearningFeedbackAssessedBy
+###  https://kastle-lab.org/aplo/lod/ontology#isLearningFeedbackAssessedBy
 aplo-ont:isLearningFeedbackAssessedBy rdf:type owl:ObjectProperty ,
                                              owl:AsymmetricProperty ,
                                              owl:IrreflexiveProperty ;
@@ -239,7 +239,7 @@ aplo-ont:isLearningFeedbackAssessedBy rdf:type owl:ObjectProperty ,
                                     rdfs:label "isLearningFeedbackAssessedBy" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isLearningFeedbackTypeOf
+###  https://kastle-lab.org/aplo/lod/ontology#isLearningFeedbackTypeOf
 aplo-ont:isLearningFeedbackTypeOf rdf:type owl:ObjectProperty ,
                                          owl:AsymmetricProperty ,
                                          owl:IrreflexiveProperty ;
@@ -249,7 +249,7 @@ aplo-ont:isLearningFeedbackTypeOf rdf:type owl:ObjectProperty ,
                                 rdfs:label "isLearningFeedbackTypeOf" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isLearningObjectiveAssessedBy
+###  https://kastle-lab.org/aplo/lod/ontology#isLearningObjectiveAssessedBy
 aplo-ont:isLearningObjectiveAssessedBy rdf:type owl:ObjectProperty ,
                                               owl:AsymmetricProperty ,
                                               owl:IrreflexiveProperty ;
@@ -259,7 +259,7 @@ aplo-ont:isLearningObjectiveAssessedBy rdf:type owl:ObjectProperty ,
                                      rdfs:label "isLearningObjectiveAssessedBy" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isResponseTimeOf
+###  https://kastle-lab.org/aplo/lod/ontology#isResponseTimeOf
 aplo-ont:isResponseTimeOf rdf:type owl:ObjectProperty ,
                                  owl:AsymmetricProperty ,
                                  owl:IrreflexiveProperty ;
@@ -269,7 +269,7 @@ aplo-ont:isResponseTimeOf rdf:type owl:ObjectProperty ,
                         rdfs:label "isResponseTimeOf" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isSourceOf
+###  https://kastle-lab.org/aplo/lod/ontology#isSourceOf
 aplo-ont:isSourceOf rdf:type owl:ObjectProperty ,
                            owl:AsymmetricProperty ,
                            owl:IrreflexiveProperty ;
@@ -279,7 +279,7 @@ aplo-ont:isSourceOf rdf:type owl:ObjectProperty ,
                   rdfs:label "isSourceOf" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isStrategyAffectedBy
+###  https://kastle-lab.org/aplo/lod/ontology#isStrategyAffectedBy
 aplo-ont:isStrategyAffectedBy rdf:type owl:ObjectProperty ,
                                      owl:AsymmetricProperty ,
                                      owl:IrreflexiveProperty ;
@@ -289,7 +289,7 @@ aplo-ont:isStrategyAffectedBy rdf:type owl:ObjectProperty ,
                             rdfs:label "isStrategyAffectedBy" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isTechniqueUsedBy
+###  https://kastle-lab.org/aplo/lod/ontology#isTechniqueUsedBy
 aplo-ont:isTechniqueUsedBy rdf:type owl:ObjectProperty ;
                          owl:inverseOf aplo-ont:usesTechnique ;
                          rdf:type owl:AsymmetricProperty ,
@@ -300,7 +300,7 @@ aplo-ont:isTechniqueUsedBy rdf:type owl:ObjectProperty ;
                          rdfs:label "isTechniqueUsedBy" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isTopicAwarenessEvaluatedBy
+###  https://kastle-lab.org/aplo/lod/ontology#isTopicAwarenessEvaluatedBy
 aplo-ont:isTopicAwarenessEvaluatedBy rdf:type owl:ObjectProperty ,
                                             owl:AsymmetricProperty ,
                                             owl:IrreflexiveProperty ;
@@ -310,7 +310,7 @@ aplo-ont:isTopicAwarenessEvaluatedBy rdf:type owl:ObjectProperty ,
                                    rdfs:label "isTopicAwarenessEvaluatedBy" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isUnitOf
+###  https://kastle-lab.org/aplo/lod/ontology#isUnitOf
 aplo-ont:isUnitOf rdf:type owl:ObjectProperty ,
                          owl:AsymmetricProperty ,
                          owl:IrreflexiveProperty ;
@@ -320,7 +320,7 @@ aplo-ont:isUnitOf rdf:type owl:ObjectProperty ,
                 rdfs:label "isUnitOf" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isWorkloadLevelOf
+###  https://kastle-lab.org/aplo/lod/ontology#isWorkloadLevelOf
 aplo-ont:isWorkloadLevelOf rdf:type owl:ObjectProperty ,
                                   owl:AsymmetricProperty ,
                                   owl:IrreflexiveProperty ;
@@ -330,7 +330,7 @@ aplo-ont:isWorkloadLevelOf rdf:type owl:ObjectProperty ,
                          rdfs:label "isWorkloadLevelOf" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#provideFeedback
+###  https://kastle-lab.org/aplo/lod/ontology#provideFeedback
 aplo-ont:provideFeedback rdf:type owl:ObjectProperty ,
                                 owl:AsymmetricProperty ,
                                 owl:IrreflexiveProperty ;
@@ -340,7 +340,7 @@ aplo-ont:provideFeedback rdf:type owl:ObjectProperty ,
                        rdfs:label "provideFeedback" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#usesTechnique
+###  https://kastle-lab.org/aplo/lod/ontology#usesTechnique
 aplo-ont:usesTechnique rdf:type owl:ObjectProperty ,
                               owl:AsymmetricProperty ,
                               owl:IrreflexiveProperty ;
@@ -354,7 +354,7 @@ aplo-ont:usesTechnique rdf:type owl:ObjectProperty ,
 #    Data properties
 #################################################################
 
-###  https://aplo.cs.wright.edu/lod/ontology#asString
+###  https://kastle-lab.org/aplo/lod/ontology#asString
 aplo-ont:asString rdf:type owl:DatatypeProperty ;
                 rdfs:domain aplo-ont:EvaluationMetric ;
                 rdfs:range rdfs:Literal ;
@@ -362,7 +362,7 @@ aplo-ont:asString rdf:type owl:DatatypeProperty ;
                 rdfs:label "asString" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#hasValue
+###  https://kastle-lab.org/aplo/lod/ontology#hasValue
 aplo-ont:hasValue rdf:type owl:DatatypeProperty ;
                 rdfs:domain aplo-ont:EvaluationResult ;
                 rdfs:range rdfs:Literal ;
@@ -404,7 +404,7 @@ edu-ont:Topic rdf:type owl:Class ;
               rdfs:label "Topic" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#Agent
+###  https://kastle-lab.org/aplo/lod/ontology#Agent
 aplo-ont:Agent rdf:type owl:Class ;
              rdfs:subClassOf [ rdf:type owl:Restriction ;
                                owl:onProperty aplo-ont:isSourceOf ;
@@ -419,13 +419,13 @@ aplo-ont:Agent rdf:type owl:Class ;
              rdfs:label "Agent" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#AwarenessObservation
+###  https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation
 aplo-ont:AwarenessObservation rdf:type owl:Class ;
                             rdfs:comment "Represents an observation or assessment event that estimates a learner's awareness of a topic or skill." ;
                             rdfs:label "AwarenessObservation" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#EvaluationAssessmentExercise
+###  https://kastle-lab.org/aplo/lod/ontology#EvaluationAssessmentExercise
 aplo-ont:EvaluationAssessmentExercise rdf:type owl:Class ;
                                     rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                       owl:onProperty aplo-ont:evaluatesTopicAwarenessOf ;
@@ -448,7 +448,7 @@ aplo-ont:EvaluationAssessmentExercise rdf:type owl:Class ;
                                     rdfs:label "EvaluationAssessmentExercise" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#EvaluationMetric
+###  https://kastle-lab.org/aplo/lod/ontology#EvaluationMetric
 aplo-ont:EvaluationMetric rdf:type owl:Class ;
                         rdfs:subClassOf [ rdf:type owl:Restriction ;
                                           owl:onProperty aplo-ont:asString ;
@@ -462,7 +462,7 @@ aplo-ont:EvaluationMetric rdf:type owl:Class ;
                         rdfs:label "EvaluationMetric" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#EvaluationResult
+###  https://kastle-lab.org/aplo/lod/ontology#EvaluationResult
 aplo-ont:EvaluationResult rdf:type owl:Class ;
                         rdfs:subClassOf aplo-ont:Response ,
                                         [ rdf:type owl:Restriction ;
@@ -477,7 +477,7 @@ aplo-ont:EvaluationResult rdf:type owl:Class ;
                         rdfs:label "EvaluationResult" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#EvaluationTechnique
+###  https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique
 aplo-ont:EvaluationTechnique rdf:type owl:Class ;
                            rdfs:subClassOf [ rdf:type owl:Restriction ;
                                              owl:onProperty aplo-ont:hasEvaluationMetric ;
@@ -506,13 +506,13 @@ aplo-ont:EvaluationTechnique rdf:type owl:Class ;
                            rdfs:label "EvaluationTechnique" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#EvaluationTechniqueType
+###  https://kastle-lab.org/aplo/lod/ontology#EvaluationTechniqueType
 aplo-ont:EvaluationTechniqueType rdf:type owl:Class ;
                                rdfs:comment "Represents the ability to capture categories of evaluation techniques, like \"summative/formative\", \"automated\", etc. These are controlled vocabulary classifications." ;
                                rdfs:label "EvaluationTechniqueType" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#LearningFeedback
+###  https://kastle-lab.org/aplo/lod/ontology#LearningFeedback
 aplo-ont:LearningFeedback rdf:type owl:Class ;
                         rdfs:subClassOf aplo-ont:Response ,
                                         [ rdf:type owl:Restriction ;
@@ -533,25 +533,25 @@ aplo-ont:LearningFeedback rdf:type owl:Class ;
                         rdfs:label "LearningFeedback" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#LearningFeedbackType
+###  https://kastle-lab.org/aplo/lod/ontology#LearningFeedbackType
 aplo-ont:LearningFeedbackType rdf:type owl:Class ;
                             rdfs:comment "Represents the ability to capture categories of feedback like \"corrective feedback\", \"motivational feedback\", etc. These are controlled vocabulary classifications." ;
                             rdfs:label "LearningFeedbackType" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#LearningObjective
+###  https://kastle-lab.org/aplo/lod/ontology#LearningObjective
 aplo-ont:LearningObjective rdf:type owl:Class ;
                          rdfs:comment "Represents the ability to capture a target learning outcome." ;
                          rdfs:label "LearningObjective" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#LearningStrategy
+###  https://kastle-lab.org/aplo/lod/ontology#LearningStrategy
 aplo-ont:LearningStrategy rdf:type owl:Class ;
                         rdfs:comment "Represents the ability to capture how instructional components come together in a teaching plan." ;
                         rdfs:label "LearningStrategy" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#Response
+###  https://kastle-lab.org/aplo/lod/ontology#Response
 aplo-ont:Response rdf:type owl:Class ;
                 rdfs:subClassOf [ rdf:type owl:Restriction ;
                                   owl:onProperty aplo-ont:hasSource ;
@@ -581,20 +581,20 @@ aplo-ont:Response rdf:type owl:Class ;
                 rdfs:label "Response" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#Source
+###  https://kastle-lab.org/aplo/lod/ontology#Source
 aplo-ont:Source rdf:type owl:Class ;
               rdfs:subClassOf aplo-ont:Agent ;
               rdfs:comment "Represents the ability to capture an entity (teacher, LLM) that produced a Response." ;
               rdfs:label "Source" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#TemporalExtent
+###  https://kastle-lab.org/aplo/lod/ontology#TemporalExtent
 aplo-ont:TemporalExtent rdf:type owl:Class ;
                       rdfs:comment "Represents a time point, interval, or duration associated with a response or evaluation event." ;
                       rdfs:label "TemporalExtent" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#WorkloadLevel
+###  https://kastle-lab.org/aplo/lod/ontology#WorkloadLevel
 aplo-ont:WorkloadLevel rdf:type owl:Class ;
                      rdfs:comment "Represents a controlled vocabulary level that models the estimated effort, time commitment, or assessment burden associated." ;
                      rdfs:label "WorkloadLevel" .

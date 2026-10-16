@@ -1,16 +1,16 @@
-@prefix : <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix : <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
-@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://aplo.cs.wright.edu/lod/ontology#> .
+@base <https://kastle-lab.org/aplo/lod/ontology#> .
 
-<https://aplo.cs.wright.edu/lod/ontology> rdf:type owl:Ontology ;
+<https://kastle-lab.org/aplo/lod/ontology> rdf:type owl:Ontology ;
                                                           dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                                           rdfs:comment "Ontology pattern for representing pedagogical frameworks, ordered pedagogical elements, pedagogical objectives, and pedagogical techniques." .
 
@@ -26,7 +26,7 @@ dcterms:license rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://aplo.cs.wright.edu/lod/ontology#alignedWith
+###  https://kastle-lab.org/aplo/lod/ontology#alignedWith
 aplo-ont:alignedWith rdf:type owl:ObjectProperty ;
                    owl:inverseOf aplo-ont:isAlignmentFor ;
                    rdf:type owl:AsymmetricProperty ,
@@ -37,7 +37,7 @@ aplo-ont:alignedWith rdf:type owl:ObjectProperty ;
                    rdfs:label "alignedWith" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#hasElement
+###  https://kastle-lab.org/aplo/lod/ontology#hasElement
 aplo-ont:hasElement rdf:type owl:ObjectProperty ;
                   owl:inverseOf aplo-ont:isElementOf ;
                   rdf:type owl:AsymmetricProperty ,
@@ -48,7 +48,7 @@ aplo-ont:hasElement rdf:type owl:ObjectProperty ;
                   rdfs:label "hasElement" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#hasNextPedagogicalElement
+###  https://kastle-lab.org/aplo/lod/ontology#hasNextPedagogicalElement
 aplo-ont:hasNextPedagogicalElement rdf:type owl:ObjectProperty ;
                                  owl:inverseOf aplo-ont:hasPreviousPedagogicalElement ;
                                  rdf:type owl:AsymmetricProperty ,
@@ -60,7 +60,7 @@ aplo-ont:hasNextPedagogicalElement rdf:type owl:ObjectProperty ;
                                  rdfs:label "hasNextPedagogicalElement" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#hasPreviousPedagogicalElement
+###  https://kastle-lab.org/aplo/lod/ontology#hasPreviousPedagogicalElement
 aplo-ont:hasPreviousPedagogicalElement rdf:type owl:ObjectProperty ,
                                               owl:AsymmetricProperty ,
                                               owl:TransitiveProperty ,
@@ -71,7 +71,7 @@ aplo-ont:hasPreviousPedagogicalElement rdf:type owl:ObjectProperty ,
                                      rdfs:label "hasPreviousPedagogicalElement" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isAlignmentFor
+###  https://kastle-lab.org/aplo/lod/ontology#isAlignmentFor
 aplo-ont:isAlignmentFor rdf:type owl:ObjectProperty ,
                                owl:AsymmetricProperty ,
                                owl:IrreflexiveProperty ;
@@ -81,7 +81,7 @@ aplo-ont:isAlignmentFor rdf:type owl:ObjectProperty ,
                       rdfs:label "isAlignmentFor" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isElementOf
+###  https://kastle-lab.org/aplo/lod/ontology#isElementOf
 aplo-ont:isElementOf rdf:type owl:ObjectProperty ,
                             owl:AsymmetricProperty ,
                             owl:IrreflexiveProperty ;
@@ -91,7 +91,7 @@ aplo-ont:isElementOf rdf:type owl:ObjectProperty ,
                    rdfs:label "isElementOf" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isLearningObjectiveTargetedBy
+###  https://kastle-lab.org/aplo/lod/ontology#isLearningObjectiveTargetedBy
 aplo-ont:isLearningObjectiveTargetedBy rdf:type owl:ObjectProperty ;
                                      owl:inverseOf aplo-ont:targetsLearningObjective ;
                                      rdf:type owl:AsymmetricProperty ,
@@ -102,7 +102,7 @@ aplo-ont:isLearningObjectiveTargetedBy rdf:type owl:ObjectProperty ;
                                      rdfs:label "isLearningObjectiveTargetedBy" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isPedagogicalElementSupportedBy
+###  https://kastle-lab.org/aplo/lod/ontology#isPedagogicalElementSupportedBy
 aplo-ont:isPedagogicalElementSupportedBy rdf:type owl:ObjectProperty ;
                                        owl:inverseOf aplo-ont:supportsPedagogicalElement ;
                                        rdf:type owl:AsymmetricProperty ,
@@ -113,7 +113,7 @@ aplo-ont:isPedagogicalElementSupportedBy rdf:type owl:ObjectProperty ;
                                        rdfs:label "isPedagogicalElementSupportedBy" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#isPedagogicalObjectiveServedBy
+###  https://kastle-lab.org/aplo/lod/ontology#isPedagogicalObjectiveServedBy
 aplo-ont:isPedagogicalObjectiveServedBy rdf:type owl:ObjectProperty ;
                                       owl:inverseOf aplo-ont:servesPedagogicalObjective ;
                                       rdf:type owl:AsymmetricProperty ,
@@ -124,7 +124,7 @@ aplo-ont:isPedagogicalObjectiveServedBy rdf:type owl:ObjectProperty ;
                                       rdfs:label "isPedagogicalObjectiveServedBy" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#servesPedagogicalObjective
+###  https://kastle-lab.org/aplo/lod/ontology#servesPedagogicalObjective
 aplo-ont:servesPedagogicalObjective rdf:type owl:ObjectProperty ,
                                            owl:AsymmetricProperty ,
                                            owl:IrreflexiveProperty ;
@@ -134,7 +134,7 @@ aplo-ont:servesPedagogicalObjective rdf:type owl:ObjectProperty ,
                                   rdfs:label "servesPedagogicalObjective" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#supportsPedagogicalElement
+###  https://kastle-lab.org/aplo/lod/ontology#supportsPedagogicalElement
 aplo-ont:supportsPedagogicalElement rdf:type owl:ObjectProperty ,
                                            owl:AsymmetricProperty ,
                                            owl:IrreflexiveProperty ;
@@ -144,7 +144,7 @@ aplo-ont:supportsPedagogicalElement rdf:type owl:ObjectProperty ,
                                   rdfs:label "supportsPedagogicalElement" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#targetsLearningObjective
+###  https://kastle-lab.org/aplo/lod/ontology#targetsLearningObjective
 aplo-ont:targetsLearningObjective rdf:type owl:ObjectProperty ,
                                          owl:AsymmetricProperty ,
                                          owl:IrreflexiveProperty ;
@@ -158,7 +158,7 @@ aplo-ont:targetsLearningObjective rdf:type owl:ObjectProperty ,
 #    Data properties
 #################################################################
 
-###  https://aplo.cs.wright.edu/lod/ontology#hasDescription
+###  https://kastle-lab.org/aplo/lod/ontology#hasDescription
 aplo-ont:hasDescription rdf:type owl:DatatypeProperty ;
                       rdfs:domain [ rdf:type owl:Class ;
                                     owl:unionOf ( aplo-ont:PedagogicalElement
@@ -172,7 +172,7 @@ aplo-ont:hasDescription rdf:type owl:DatatypeProperty ;
                       rdfs:label "hasDescription" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#hasName
+###  https://kastle-lab.org/aplo/lod/ontology#hasName
 aplo-ont:hasName rdf:type owl:DatatypeProperty ;
                rdfs:domain [ rdf:type owl:Class ;
                              owl:unionOf ( aplo-ont:PedagogicalElement
@@ -190,21 +190,21 @@ aplo-ont:hasName rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
-###  https://aplo.cs.wright.edu/lod/ontology#FirstPedagogicalElement
+###  https://kastle-lab.org/aplo/lod/ontology#FirstPedagogicalElement
 aplo-ont:FirstPedagogicalElement rdf:type owl:Class ;
                                rdfs:subClassOf aplo-ont:PedagogicalElement ;
                                rdfs:comment "Represents the first element in an ordered pedagogical framework sequence." ;
                                rdfs:label "FirstPedagogicalElement" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#LastPedagogicalElement
+###  https://kastle-lab.org/aplo/lod/ontology#LastPedagogicalElement
 aplo-ont:LastPedagogicalElement rdf:type owl:Class ;
                               rdfs:subClassOf aplo-ont:PedagogicalElement ;
                               rdfs:comment "Represents the last element in an ordered pedagogical framework sequence." ;
                               rdfs:label "LastPedagogicalElement" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#LearningObjective
+###  https://kastle-lab.org/aplo/lod/ontology#LearningObjective
 aplo-ont:LearningObjective rdf:type owl:Class ;
                          rdfs:subClassOf [ rdf:type owl:Restriction ;
                                            owl:onProperty aplo-ont:alignedWith ;
@@ -219,7 +219,7 @@ aplo-ont:LearningObjective rdf:type owl:Class ;
                          rdfs:label "LearningObjective" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#PedagogicalElement
+###  https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement
 aplo-ont:PedagogicalElement rdf:type owl:Class ;
                           rdfs:subClassOf [ rdf:type owl:Restriction ;
                                             owl:onProperty aplo-ont:hasNextPedagogicalElement ;
@@ -262,7 +262,7 @@ aplo-ont:PedagogicalElement rdf:type owl:Class ;
                           rdfs:label "PedagogicalElement" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#PedagogicalFramework
+###  https://kastle-lab.org/aplo/lod/ontology#PedagogicalFramework
 aplo-ont:PedagogicalFramework rdf:type owl:Class ;
                             rdfs:subClassOf [ rdf:type owl:Restriction ;
                                               owl:onProperty aplo-ont:hasElement ;
@@ -293,7 +293,7 @@ aplo-ont:PedagogicalFramework rdf:type owl:Class ;
                             rdfs:label "PedagogicalFramework" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#PedagogicalObjective
+###  https://kastle-lab.org/aplo/lod/ontology#PedagogicalObjective
 aplo-ont:PedagogicalObjective rdf:type owl:Class ;
                             rdfs:subClassOf [ rdf:type owl:Restriction ;
                                               owl:onProperty aplo-ont:hasName ;
@@ -319,7 +319,7 @@ aplo-ont:PedagogicalObjective rdf:type owl:Class ;
                             rdfs:label "PedagogicalObjective" .
 
 
-###  https://aplo.cs.wright.edu/lod/ontology#PedagogicalTechnique
+###  https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique
 aplo-ont:PedagogicalTechnique rdf:type owl:Class ;
                             rdfs:subClassOf [ rdf:type owl:Restriction ;
                                               owl:onProperty aplo-ont:servesPedagogicalObjective ;

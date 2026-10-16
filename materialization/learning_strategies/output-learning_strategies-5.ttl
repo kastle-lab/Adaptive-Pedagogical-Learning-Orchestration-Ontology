@@ -1,5 +1,5 @@
-@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
-@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ont#> .
+@prefix aplo-r: <https://kastle-lab.org/aplo/lod/res#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:learningStrategy.SPARQL%20Query%20Practice.Query%20Construction%20Strategy a aplo-ont:LearningStrategy ;
