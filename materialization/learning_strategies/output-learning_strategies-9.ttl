@@ -1,5 +1,5 @@
-@prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ont#> .
-@prefix aplo-r: <https://kastle-lab.org/aplo/lod/res#> .
+@prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
+@prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:learningStrategy.Developer%20Knowledge%20Graph%20Implementation%20Practice.Developer%20KG%20Implementation%20Strategy a aplo-ont:LearningStrategy ;

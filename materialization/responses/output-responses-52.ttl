@@ -1,5 +1,5 @@
-@prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ont#> .
-@prefix aplo-r: <https://kastle-lab.org/aplo/lod/res#> .
+@prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
+@prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .

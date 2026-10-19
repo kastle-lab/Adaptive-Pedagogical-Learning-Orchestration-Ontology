@@ -1,5 +1,5 @@
-@prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ont#> .
-@prefix aplo-r: <https://kastle-lab.org/aplo/lod/res#> .
+@prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
+@prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:learningStrategy.Foundational%20Semantic%20Web%20Study.Semantic%20Web%20Foundations%20Strategy a aplo-ont:LearningStrategy ;

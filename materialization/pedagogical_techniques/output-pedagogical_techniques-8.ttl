@@ -1,5 +1,5 @@
-@prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ont#> .
-@prefix aplo-r: <https://kastle-lab.org/aplo/lod/res#> .
+@prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
+@prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:pedagogicalTechnique.Project%20Brief a aplo-ont:PedagogicalTechnique ;
