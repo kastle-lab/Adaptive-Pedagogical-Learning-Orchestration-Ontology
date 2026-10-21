@@ -1,0 +1,3099 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://kastle-lab.org/currkg/lod/ontology", "https://kastle-lab.org/aplo/lod/ontology" ],
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "comments" : {
+      "undefined" : "Ontology pattern for representing pedagogical frameworks, ordered pedagogical elements, pedagogical objectives, and pedagogical techniques."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "34",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "184",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "198",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "158",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:Literal"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#AwarenessLevel",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AwarenessLevel",
+      "undefined" : "AwarenessLevel"
+    },
+    "comment" : {
+      "undefined" : "Represents a controlled vocabulary level that models a learner's awareness on a topic or skill."
+    },
+    "id" : "3"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#Source",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Source",
+      "undefined" : "Source"
+    },
+    "comment" : {
+      "undefined" : "Represents the ability to capture an entity (teacher, LLM) that produced a Response."
+    },
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#LastPedagogicalElement",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LastPedagogicalElement",
+      "undefined" : "LastPedagogicalElement"
+    },
+    "comment" : {
+      "undefined" : "Represents the last element in an ordered pedagogical framework sequence."
+    },
+    "id" : "30",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#AccessibilityChallenge",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AccessibilityChallenge",
+      "undefined" : "AccessibilityChallenge"
+    },
+    "comment" : {
+      "undefined" : "Represents a specialized (subclass of) learning challenge related to accessibility needs, such as captions, screen-reader compatibility, alternative media, or extended time."
+    },
+    "id" : "53",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#LearningChallenge",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LearningChallenge",
+      "undefined" : "LearningChallenge"
+    },
+    "subClasses" : [ "53" ],
+    "comment" : {
+      "undefined" : "Represents constraints, barriers, or needs that may affect a learner's ability to engage with instruction or learning material or process (complementary to preference)."
+    },
+    "id" : "52"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PedagogicalElement",
+      "undefined" : "PedagogicalElement"
+    },
+    "subClasses" : [ "30", "57" ],
+    "comment" : {
+      "undefined" : "Represents the atomic finite element that is part of a pedagogical framework"
+    },
+    "id" : "31"
+  }, {
+    "iri" : "https://kastle-lab.org/currkg/lod/ontology#Topic",
+    "baseIri" : "https://kastle-lab.org/currkg/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Topic",
+      "undefined" : "Topic"
+    },
+    "comment" : {
+      "undefined" : "Represents a subject matter topic required by skills or observed in learner awareness."
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#LearningSituation",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LearningSituation",
+      "undefined" : "LearningSituation"
+    },
+    "comment" : {
+      "undefined" : "Represents the ability to capture the current state or situation of a learner (e.g. learner context, prior knowledge, etc.)."
+    },
+    "id" : "10"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#PedagogicalFramework",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PedagogicalFramework",
+      "undefined" : "PedagogicalFramework"
+    },
+    "comment" : {
+      "undefined" : "Represents the ability to capture a pedagogical framework used for instructional design"
+    },
+    "id" : "65"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#LearnerGoal",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LearnerGoal",
+      "undefined" : "LearnerGoal"
+    },
+    "comment" : {
+      "undefined" : "Represents a learner-specific goal, such as acquiring a skill or reaching a target learning outcome."
+    },
+    "id" : "61"
+  }, {
+    "iri" : "https://kastle-lab.org/currkg/lod/ontology#Module",
+    "baseIri" : "https://kastle-lab.org/currkg/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Module",
+      "undefined" : "Module"
+    },
+    "comment" : {
+      "undefined" : "Represents an instructional module that includes one or more assessment exercises."
+    },
+    "attributes" : [ "external" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#PedagogicalObjective",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PedagogicalObjective",
+      "undefined" : "PedagogicalObjective"
+    },
+    "comment" : {
+      "undefined" : "Represents the ability to capture an intended instructional effect or educational purpose that a pedagogical technique is designed to achieve, such as retention, recall, engagement, misconception diagnosis, knowledge transfer, or deeper conceptual understanding."
+    },
+    "id" : "48"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#Skill",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Skill",
+      "undefined" : "Skill"
+    },
+    "comment" : {
+      "undefined" : "Represents a lightweight bridge concept connecting learner goals, learning objectives, topics, and future alignment across external skill or labor market ontologies."
+    },
+    "id" : "14"
+  }, {
+    "iri" : "https://kastle-lab.org/currkg/lod/ontology#Persona",
+    "baseIri" : "https://kastle-lab.org/currkg/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Persona",
+      "undefined" : "Persona"
+    },
+    "comment" : {
+      "undefined" : "Represents a learner persona used to scope or contextualize a learning situation."
+    },
+    "attributes" : [ "external" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "107",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#WorkloadLevel",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WorkloadLevel",
+      "undefined" : "WorkloadLevel"
+    },
+    "comment" : {
+      "undefined" : "Represents a controlled vocabulary level that models the estimated effort, time commitment, or assessment burden associated."
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "120",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#TemporalExtent",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporalExtent",
+      "undefined" : "TemporalExtent"
+    },
+    "comment" : {
+      "undefined" : "Represents a time point, interval, or duration associated with a response or evaluation event."
+    },
+    "id" : "68"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#Agent",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent",
+      "undefined" : "Agent"
+    },
+    "subClasses" : [ "24", "7" ],
+    "comment" : {
+      "undefined" : "Represents an actor or agentive entity, including learners, whose learning state can be modeled."
+    },
+    "id" : "8"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#EvaluationMetric",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EvaluationMetric",
+      "undefined" : "EvaluationMetric"
+    },
+    "comment" : {
+      "undefined" : "Represents the ability to capture what type of measurable unit of evaluation techniques was utilized."
+    },
+    "id" : "96"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#FirstPedagogicalElement",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FirstPedagogicalElement",
+      "undefined" : "FirstPedagogicalElement"
+    },
+    "comment" : {
+      "undefined" : "Represents the first element in an ordered pedagogical framework sequence."
+    },
+    "id" : "57",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "131",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EvaluationTechnique",
+      "undefined" : "EvaluationTechnique"
+    },
+    "comment" : {
+      "undefined" : "Represents the ability to capture what evaluation methods are utilized for assessment."
+    },
+    "id" : "17"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#LearningFeedback",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LearningFeedback",
+      "undefined" : "LearningFeedback"
+    },
+    "comment" : {
+      "undefined" : "Represents the ability to capture an observation about a learner's performance or understanding."
+    },
+    "id" : "2",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#LearningStrategy",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LearningStrategy",
+      "undefined" : "LearningStrategy"
+    },
+    "comment" : {
+      "undefined" : "Represents the ability to capture how instructional components come together in a teaching plan."
+    },
+    "id" : "36"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#EvaluationResult",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EvaluationResult",
+      "undefined" : "EvaluationResult"
+    },
+    "comment" : {
+      "undefined" : "Represents the ability to capture what measurable value of evaluation technique was utilized."
+    },
+    "id" : "95",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "145",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "91", "36" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "55"
+  }, {
+    "instances" : 0,
+    "union" : [ "91", "42" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#Response",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Response",
+      "undefined" : "Response"
+    },
+    "subClasses" : [ "95", "2" ],
+    "comment" : {
+      "undefined" : "Represents the ability to capture an explicit feedback message or system output delivered to a learner."
+    },
+    "id" : "45"
+  }, {
+    "iri" : "https://kastle-lab.org/currkg/lod/ontology#Media",
+    "baseIri" : "https://kastle-lab.org/currkg/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Media",
+      "undefined" : "Media"
+    },
+    "comment" : {
+      "undefined" : "Represents a learning media resource that supports one or more learning objectives."
+    },
+    "attributes" : [ "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#EvaluationAssessmentExercise",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EvaluationAssessmentExercise",
+      "undefined" : "EvaluationAssessmentExercise"
+    },
+    "comment" : {
+      "undefined" : "Represents an assessment activity or exercise through which a learner's understanding, awareness, or performance is evaluated with respect to a topic, skill, or learning objective."
+    },
+    "id" : "6"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "164",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#EvaluationTechniqueType",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EvaluationTechniqueType",
+      "undefined" : "EvaluationTechniqueType"
+    },
+    "comment" : {
+      "undefined" : "Represents the ability to capture categories of evaluation techniques, like \"summative/formative\", \"automated\", etc. These are controlled vocabulary classifications."
+    },
+    "id" : "102"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "169",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#LearningFeedbackType",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LearningFeedbackType",
+      "undefined" : "LearningFeedbackType"
+    },
+    "comment" : {
+      "undefined" : "Represents the ability to capture categories of feedback like \"corrective feedback\", \"motivational feedback\", etc. These are controlled vocabulary classifications."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PedagogicalTechnique",
+      "undefined" : "PedagogicalTechnique"
+    },
+    "comment" : {
+      "undefined" : "Represents the ability to capture a specific instructional method that is used in instructional design"
+    },
+    "id" : "28"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#LearnerPreference",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LearnerPreference",
+      "undefined" : "LearnerPreference"
+    },
+    "comment" : {
+      "undefined" : "Represents learner-specific preferences used to personalize instruction, resources, feedback, delivery and recommendations (complementary to challenge)."
+    },
+    "id" : "25"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "173",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#Learner",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Learner",
+      "undefined" : "Learner"
+    },
+    "comment" : {
+      "undefined" : "Represents the individual learning agent whose goals, preferences, challenges, awareness, and learning situations are modeled for personalization."
+    },
+    "id" : "24",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#LearningObjective",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LearningObjective",
+      "undefined" : "LearningObjective"
+    },
+    "comment" : {
+      "undefined" : "Represents the ability to capture a target learning outcome."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#CurrentAwarenessObservation",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CurrentAwarenessObservation",
+      "undefined" : "CurrentAwarenessObservation"
+    },
+    "comment" : {
+      "undefined" : "Represents the current or active awareness observation used to describe a learner's present awareness observation over a scope."
+    },
+    "id" : "184",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "124",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AwarenessObservation",
+      "undefined" : "AwarenessObservation"
+    },
+    "subClasses" : [ "184" ],
+    "comment" : {
+      "undefined" : "Represents an observation or assessment event that estimates a learner's awareness of a topic or skill."
+    },
+    "id" : "19"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "48", "28", "11", "36", "31", "65" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "159",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "91", "36" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "198"
+  }, {
+    "instances" : 0,
+    "union" : [ "91", "42" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "22"
+  }, {
+    "instances" : 0,
+    "union" : [ "48", "28", "11", "36", "31", "65" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "138",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "88",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "89",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "90",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "92",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "93",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "94",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "99",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "101",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "111",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "112",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "113",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "116",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "117",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "118",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "119",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "127",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "128",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "129",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "130",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "132",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "133",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "134",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "137",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "143",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "144",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "146",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "147",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "148",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "149",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "150",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "151",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "154",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "155",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "157",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "152",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "161",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "162",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "163",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "165",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "168",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "170",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "171",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "172",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "103",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "174",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "175",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "176",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "177",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "178",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "179",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "180",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "190",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "191",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "192",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "193",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "194",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "195",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "196",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "197",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "199",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "200",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "201",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "202",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "204",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "205",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "206",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "207",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "166",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "208",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "209",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "210",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "211",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isLearningFeedbackTypeOf",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isLearningFeedbackTypeOf",
+      "undefined" : "isLearningFeedbackTypeOf"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Inverse of hasLearningFeedbackType; relates a feedback type to feedback instances classified by it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isWorkloadLevelOf",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "isWorkloadLevelOf",
+      "undefined" : "isWorkloadLevelOf"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Inverse of hasWorkloadLevel; relates a workload level to an assessment exercise assigned that level."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isSituationWorkedOnBy",
+    "inverse" : "12",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "isSituationWorkedOnBy",
+      "undefined" : "isSituationWorkedOnBy"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Inverse of worksOnSituation; relates a learning situation to learning objectives that address it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#developsSkill",
+    "inverse" : "15",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "developsSkill",
+      "undefined" : "developsSkill"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Relates a learning objective to a skill that the objective is intended to develop."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isLearningObjectiveAssessedBy",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "isLearningObjectiveAssessedBy",
+      "undefined" : "isLearningObjectiveAssessedBy"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Inverse of assessesLearningObjective; relates a learning objective to an evaluation technique that assesses it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#onTopic",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "onTopic",
+      "undefined" : "onTopic"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Relates an awareness observation to the topic that the observation is about."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isAssessmentExerciseOf",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "isAssessmentExerciseOf",
+      "undefined" : "isAssessmentExerciseOf"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Inverse of hasAssessmentExercise; relates an assessment exercise back to the media or module that includes it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasLearnerPreference",
+    "inverse" : "26",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasLearnerPreference",
+      "undefined" : "hasLearnerPreference"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "Relates a learner to a preference used for personalization."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#targetsLearningObjective",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "targetsLearningObjective",
+      "undefined" : "targetsLearningObjective"
+    },
+    "domain" : "28",
+    "comment" : {
+      "undefined" : "Relates a pedagogical technique to a learning objective targeted by that technique."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isTopicAwarenessEvaluatedBy",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "isTopicAwarenessEvaluatedBy",
+      "undefined" : "isTopicAwarenessEvaluatedBy"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Inverse of evaluatesTopicAwarenessOf; relates a topic to an assessment exercise evaluating awareness of it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isSituationOf",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "isSituationOf",
+      "undefined" : "isSituationOf"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Inverse of hasSituation; relates a learning situation to the learner it describes."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasAssessmentExercise",
+    "inverse" : "21",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasAssessmentExercise",
+      "undefined" : "hasAssessmentExercise"
+    },
+    "domain" : "34",
+    "comment" : {
+      "undefined" : "Relates a module or media resource to an assessment exercise included in or associated with that learning resource."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasPedagogicalTechnique",
+    "inverse" : "37",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasPedagogicalTechnique",
+      "undefined" : "hasPedagogicalTechnique"
+    },
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "Relates a learning strategy to a pedagogical technique used by that strategy."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasName",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "hasName"
+    },
+    "maxCardinality" : "1",
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Provides the required textual name for a learning objective or learning strategy."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isLearningObjectiveSupportedBy",
+    "inverse" : "43",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "isLearningObjectiveSupportedBy",
+      "undefined" : "isLearningObjectiveSupportedBy"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Inverse of supportsLearningObjective; relates a learning objective to media that supports it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isSkillDevelopedBy",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "isSkillDevelopedBy",
+      "undefined" : "isSkillDevelopedBy"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Inverse of developsSkill; relates a skill to learning objectives that develop it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isSourceOf",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "isSourceOf",
+      "undefined" : "isSourceOf"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Inverse of hasSource; relates a source to a response produced by that source."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isLearningFeedbackAssessedBy",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "isLearningFeedbackAssessedBy",
+      "undefined" : "isLearningFeedbackAssessedBy"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Inverse of assessesLearningFeedback; relates learning feedback to an evaluation technique that assesses it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isPedagogicalObjectiveServedBy",
+    "inverse" : "49",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "isPedagogicalObjectiveServedBy",
+      "undefined" : "isPedagogicalObjectiveServedBy"
+    },
+    "domain" : "48",
+    "comment" : {
+      "undefined" : "Inverse of servesPedagogicalObjective; relates a pedagogical objective to techniques that serve it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasSource",
+    "inverse" : "44",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasSource",
+      "undefined" : "hasSource"
+    },
+    "domain" : "45",
+    "comment" : {
+      "undefined" : "Relates a response to the source or agentive origin that produced it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#servesPedagogicalObjective",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "servesPedagogicalObjective",
+      "undefined" : "servesPedagogicalObjective"
+    },
+    "domain" : "28",
+    "comment" : {
+      "undefined" : "Relates a pedagogical technique to an instructional objective that the technique serves."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isLearningChallengeOf",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "isLearningChallengeOf",
+      "undefined" : "isLearningChallengeOf"
+    },
+    "domain" : "52",
+    "comment" : {
+      "undefined" : "Inverse of hasLearningChallenge; relates a learning challenge to the learner affected by it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasLearningObjective",
+    "inverse" : "56",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasLearningObjective",
+      "undefined" : "hasLearningObjective"
+    },
+    "domain" : "55",
+    "comment" : {
+      "undefined" : "Relates a module or learning strategy to a learning objective it includes."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasNextPedagogicalElement",
+    "inverse" : "59",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasNextPedagogicalElement",
+      "undefined" : "hasNextPedagogicalElement"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "Relates a pedagogical element to a later element in an ordered framework sequence."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object", "transitive" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isPedagogicalTechniqueOf",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "isPedagogicalTechniqueOf",
+      "undefined" : "isPedagogicalTechniqueOf"
+    },
+    "domain" : "28",
+    "comment" : {
+      "undefined" : "Inverse of hasPedagogicalTechnique; relates a pedagogical technique to learning strategies that use it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#targetsSkill",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "targetsSkill",
+      "undefined" : "targetsSkill"
+    },
+    "domain" : "61",
+    "comment" : {
+      "undefined" : "Relates a learner goal to the skill targeted by that goal."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#alignedWith",
+    "inverse" : "63",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "alignedWith",
+      "undefined" : "alignedWith"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Relates a learning objective to a pedagogical element with which the objective is aligned."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasElement",
+    "inverse" : "66",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasElement",
+      "undefined" : "hasElement"
+    },
+    "domain" : "65",
+    "comment" : {
+      "undefined" : "Relates a pedagogical framework to an element contained in that framework."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasResponseTime",
+    "inverse" : "69",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "hasResponseTime",
+      "undefined" : "hasResponseTime"
+    },
+    "domain" : "45",
+    "comment" : {
+      "undefined" : "Relates a response or evaluation result to the time or duration associated with that response."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#assessesLearningObjective",
+    "inverse" : "16",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "assessesLearningObjective",
+      "undefined" : "assessesLearningObjective"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Relates an evaluation technique to a learning objective that the technique assesses."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasAwarenessLevel",
+    "inverse" : "72",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasAwarenessLevel",
+      "undefined" : "hasAwarenessLevel"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Relates an awareness observation to the controlled awareness level assigned to it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasSituation",
+    "inverse" : "32",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasSituation",
+      "undefined" : "hasSituation"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "Relates a learner to a current or relevant learning situation."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isTopicRequiredBy",
+    "inverse" : "75",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "isTopicRequiredBy",
+      "undefined" : "isTopicRequiredBy"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Inverse of requiresTopic; relates a topic to skills that require it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasAwarenessObservation",
+    "inverse" : "77",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasAwarenessObservation",
+      "undefined" : "hasAwarenessObservation"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "Relates a learner to awareness observations recorded for that learner."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasLearningChallenge",
+    "inverse" : "51",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "hasLearningChallenge",
+      "undefined" : "hasLearningChallenge"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "Relates a learner to a learning challenge, barrier, or need that may affect learning."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isTopicObservedBy",
+    "inverse" : "18",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isTopicObservedBy",
+      "undefined" : "isTopicObservedBy"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Inverse of onTopic; relates a topic to awareness observations about that topic."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isTechniqueUsedBy",
+    "inverse" : "81",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "isTechniqueUsedBy",
+      "undefined" : "isTechniqueUsedBy"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Inverse of usesTechnique; relates an evaluation technique to an assessment exercise that uses it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isTimeOfAwarenessObservation",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isTimeOfAwarenessObservation",
+      "undefined" : "isTimeOfAwarenessObservation"
+    },
+    "domain" : "68",
+    "comment" : {
+      "undefined" : "Inverse of atTime; relates a temporal extent to awareness observations recorded at that time."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "31",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#supportsLearningObjective",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "supportsLearningObjective",
+      "undefined" : "supportsLearningObjective"
+    },
+    "domain" : "42",
+    "comment" : {
+      "undefined" : "Relates a media resource to a learning objective supported by that resource."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasGoal",
+    "inverse" : "85",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "hasGoal",
+      "undefined" : "hasGoal"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "Relates a learner to a learner-specific goal."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#evaluatesTopicAwarenessOf",
+    "inverse" : "29",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "evaluatesTopicAwarenessOf",
+      "undefined" : "evaluatesTopicAwarenessOf"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Relates an assessment exercise to the topic whose learner awareness is being evaluated."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "28",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasLearningFeedbackType",
+    "inverse" : "0",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasLearningFeedbackType",
+      "undefined" : "hasLearningFeedbackType"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Relates learning feedback to a controlled feedback type or category."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#targetsSkill",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "targetsSkill",
+      "undefined" : "targetsSkill"
+    },
+    "domain" : "61",
+    "comment" : {
+      "undefined" : "Relates a learner goal to the skill targeted by that goal."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasSituation",
+    "inverse" : "32",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasSituation",
+      "undefined" : "hasSituation"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "Relates a learner to a current or relevant learning situation."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "90"
+  }, {
+    "range" : "52",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "92"
+  }, {
+    "range" : "20",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasUnit",
+    "inverse" : "97",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "undefined" : "hasUnit"
+    },
+    "domain" : "95",
+    "comment" : {
+      "undefined" : "Relates an evaluation result to the metric or unit in which the result is expressed."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasEvaluationMetric",
+    "inverse" : "100",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "hasEvaluationMetric",
+      "undefined" : "hasEvaluationMetric"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Relates an evaluation technique to the metric used to measure or report its result."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasEvaluationTechniqueType",
+    "inverse" : "103",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "hasEvaluationTechniqueType",
+      "undefined" : "hasEvaluationTechniqueType"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Relates an evaluation technique to a controlled type or category for that technique."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "101"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#supportsPedagogicalElement",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "supportsPedagogicalElement",
+      "undefined" : "supportsPedagogicalElement"
+    },
+    "domain" : "28",
+    "comment" : {
+      "undefined" : "Relates a pedagogical technique to a pedagogical element that the technique supports."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#worksOnSituation",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "worksOnSituation",
+      "undefined" : "worksOnSituation"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Relates a learning objective to a learning situation addressed by that objective."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#onSkill",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "onSkill",
+      "undefined" : "onSkill"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Relates an awareness observation to the skill that the observation is about."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isResponseTimeOf",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "isResponseTimeOf",
+      "undefined" : "isResponseTimeOf"
+    },
+    "domain" : "68",
+    "comment" : {
+      "undefined" : "Inverse of hasResponseTime; relates a temporal extent to the response timed by it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isAwarenessLevelOf",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isAwarenessLevelOf",
+      "undefined" : "isAwarenessLevelOf"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Inverse of hasAwarenessLevel; relates an awareness level to observations assigned that level."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#asString",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "asString",
+      "undefined" : "asString"
+    },
+    "domain" : "96",
+    "comment" : {
+      "undefined" : "Provides a literal string representation for an evaluation metric."
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "108"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isStrategyAffectedBy",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isStrategyAffectedBy",
+      "undefined" : "isStrategyAffectedBy"
+    },
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "Inverse of affectsStrategy; relates a learning strategy to feedback that may influence it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "109"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasValue",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "hasValue",
+      "undefined" : "hasValue"
+    },
+    "domain" : "95",
+    "comment" : {
+      "undefined" : "Provides the literal value recorded for an evaluation result."
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasWorkloadLevel",
+    "inverse" : "4",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasWorkloadLevel",
+      "undefined" : "hasWorkloadLevel"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Relates an assessment exercise to the controlled workload level assigned to it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "111"
+  }, {
+    "range" : "20",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#evaluatesTopicAwarenessOf",
+    "inverse" : "29",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "evaluatesTopicAwarenessOf",
+      "undefined" : "evaluatesTopicAwarenessOf"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Relates an assessment exercise to the topic whose learner awareness is being evaluated."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#requiresTopicKnowledge",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "requiresTopicKnowledge",
+      "undefined" : "requiresTopicKnowledge"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Relates a learning situation to a topic that should be known beforehand."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "114"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#usesTechnique",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "usesTechnique",
+      "undefined" : "usesTechnique"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Relates an assessment exercise to the evaluation technique used by that exercise."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "115"
+  }, {
+    "range" : "14",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "range" : "20",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasAwarenessLevel",
+    "inverse" : "72",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasAwarenessLevel",
+      "undefined" : "hasAwarenessLevel"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Relates an awareness observation to the controlled awareness level assigned to it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "118"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasName",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "120",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "hasName"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "Provides the required textual name for a learning objective or learning strategy."
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "119"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#atTime",
+    "inverse" : "82",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "atTime",
+      "undefined" : "atTime"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Relates an awareness observation to the time point, interval, or duration at which it was made."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "28",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isElementOf",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "isElementOf",
+      "undefined" : "isElementOf"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "Inverse of hasElement; relates a pedagogical element to the framework that contains it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasValue",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "124",
+    "label" : {
+      "IRI-based" : "hasValue",
+      "undefined" : "hasValue"
+    },
+    "domain" : "95",
+    "comment" : {
+      "undefined" : "Provides the literal value recorded for an evaluation result."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "123"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasLearningFeedbackType",
+    "inverse" : "0",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasLearningFeedbackType",
+      "undefined" : "hasLearningFeedbackType"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Relates learning feedback to a controlled feedback type or category."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "125"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isLearnerPreferenceOf",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "isLearnerPreferenceOf",
+      "undefined" : "isLearnerPreferenceOf"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "Inverse of hasLearnerPreference; relates a learner preference to the learner it personalizes."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasPedagogicalTechnique",
+    "inverse" : "37",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasPedagogicalTechnique",
+      "undefined" : "hasPedagogicalTechnique"
+    },
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "Relates a learning strategy to a pedagogical technique used by that strategy."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "20",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "range" : "20",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "31",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasName",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "131",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "hasName"
+    },
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "Provides the required textual name for a learning objective or learning strategy."
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "130"
+  }, {
+    "range" : "36",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasLearningObjective",
+    "inverse" : "56",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasLearningObjective",
+      "undefined" : "hasLearningObjective"
+    },
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "Relates a module or learning strategy to a learning objective it includes."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "133"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasUnit",
+    "inverse" : "97",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "undefined" : "hasUnit"
+    },
+    "domain" : "95",
+    "comment" : {
+      "undefined" : "Relates an evaluation result to the metric or unit in which the result is expressed."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "134"
+  }, {
+    "range" : "28",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#usesTechnique",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "usesTechnique",
+      "undefined" : "usesTechnique"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Relates an assessment exercise to the evaluation technique used by that exercise."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "81"
+  }, {
+    "range" : "31",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#asString",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "138",
+    "label" : {
+      "IRI-based" : "asString",
+      "undefined" : "asString"
+    },
+    "maxCardinality" : "1",
+    "domain" : "96",
+    "comment" : {
+      "undefined" : "Provides a literal string representation for an evaluation metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "137"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isEvaluationMetricOf",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "isEvaluationMetricOf",
+      "undefined" : "isEvaluationMetricOf"
+    },
+    "domain" : "96",
+    "comment" : {
+      "undefined" : "Inverse of hasEvaluationMetric; relates an evaluation metric to the technique that uses it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasWorkloadLevel",
+    "inverse" : "4",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasWorkloadLevel",
+      "undefined" : "hasWorkloadLevel"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Relates an assessment exercise to the controlled workload level assigned to it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isLearningObjectiveTargetedBy",
+    "inverse" : "27",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "isLearningObjectiveTargetedBy",
+      "undefined" : "isLearningObjectiveTargetedBy"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Inverse of targetsLearningObjective; relates a learning objective to pedagogical techniques that target it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "140"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isTargetSkillOf",
+    "inverse" : "60",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "isTargetSkillOf",
+      "undefined" : "isTargetSkillOf"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Inverse of targetsSkill; relates a skill to learner goals that target it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "141"
+  }, {
+    "range" : "20",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "range" : "10",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "range" : "48",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasName",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "145",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "hasName"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Provides the required textual name for a learning objective or learning strategy."
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "146"
+  }, {
+    "range" : "65",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#developsSkill",
+    "inverse" : "15",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "developsSkill",
+      "undefined" : "developsSkill"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Relates a learning objective to a skill that the objective is intended to develop."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "36",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "range" : "20",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isFeedbackProvidedBy",
+    "inverse" : "152",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "isFeedbackProvidedBy",
+      "undefined" : "isFeedbackProvidedBy"
+    },
+    "domain" : "45",
+    "comment" : {
+      "undefined" : "Inverse of provideFeedback; relates a response or feedback artifact to the evaluation technique that produced it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "151"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasLearningObjective",
+    "inverse" : "56",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasLearningObjective",
+      "undefined" : "hasLearningObjective"
+    },
+    "domain" : "91",
+    "comment" : {
+      "undefined" : "Relates a module or learning strategy to a learning objective it includes."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "153"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasAssessmentExercise",
+    "inverse" : "21",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasAssessmentExercise",
+      "undefined" : "hasAssessmentExercise"
+    },
+    "domain" : "91",
+    "comment" : {
+      "undefined" : "Relates a module or media resource to an assessment exercise included in or associated with that learning resource."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "154"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasEvaluationTechniqueType",
+    "inverse" : "103",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "hasEvaluationTechniqueType",
+      "undefined" : "hasEvaluationTechniqueType"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Relates an evaluation technique to a controlled type or category for that technique."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "155"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isPedagogicalElementSupportedBy",
+    "inverse" : "104",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "isPedagogicalElementSupportedBy",
+      "undefined" : "isPedagogicalElementSupportedBy"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "Inverse of supportsPedagogicalElement; relates a pedagogical element to techniques that support it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "156"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasDescription",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "159",
+    "label" : {
+      "IRI-based" : "hasDescription",
+      "undefined" : "hasDescription"
+    },
+    "maxCardinality" : "1",
+    "domain" : "158",
+    "comment" : {
+      "undefined" : "Provides an optional textual description for a learning objective or learning strategy."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "157"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#supportsLearningObjective",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "supportsLearningObjective",
+      "undefined" : "supportsLearningObjective"
+    },
+    "domain" : "42",
+    "comment" : {
+      "undefined" : "Relates a media resource to a learning objective supported by that resource."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "160"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isGoalOf",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "isGoalOf",
+      "undefined" : "isGoalOf"
+    },
+    "domain" : "61",
+    "comment" : {
+      "undefined" : "Inverse of hasGoal; relates a learner goal to the learner who has that goal."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#provideFeedback",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "provideFeedback",
+      "undefined" : "provideFeedback"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Relates an evaluation technique to a response or feedback artifact produced by that technique."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "152"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#requiresTopic",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "requiresTopic",
+      "undefined" : "requiresTopic"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Relates a skill to a topic required for developing or applying that skill."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "161"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasSource",
+    "inverse" : "44",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasSource",
+      "undefined" : "hasSource"
+    },
+    "domain" : "45",
+    "comment" : {
+      "undefined" : "Relates a response to the source or agentive origin that produced it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "162"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isAlignmentFor",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "isAlignmentFor",
+      "undefined" : "isAlignmentFor"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "Inverse of alignedWith; relates a pedagogical element to learning objectives aligned with it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasName",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "164",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "hasName"
+    },
+    "domain" : "28",
+    "comment" : {
+      "undefined" : "Provides the required textual name for a learning objective or learning strategy."
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "163"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#affectsAwarenessObservation",
+    "inverse" : "166",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "affectsAwarenessObservation",
+      "undefined" : "affectsAwarenessObservation"
+    },
+    "domain" : "45",
+    "comment" : {
+      "undefined" : "Relates a response or evaluation result to an awareness observation that the response influences or updates."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "165"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#servesPedagogicalObjective",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "servesPedagogicalObjective",
+      "undefined" : "servesPedagogicalObjective"
+    },
+    "domain" : "28",
+    "comment" : {
+      "undefined" : "Relates a pedagogical technique to an instructional objective that the technique serves."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "167"
+  }, {
+    "range" : "20",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "168"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasName",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "169",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "hasName"
+    },
+    "domain" : "48",
+    "comment" : {
+      "undefined" : "Provides the required textual name for a learning objective or learning strategy."
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "170"
+  }, {
+    "range" : "20",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "28",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "172"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isEvaluationTechniqueTypeOf",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "isEvaluationTechniqueTypeOf",
+      "undefined" : "isEvaluationTechniqueTypeOf"
+    },
+    "domain" : "102",
+    "comment" : {
+      "undefined" : "Inverse of hasEvaluationTechniqueType; relates a technique type to evaluation techniques classified by it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasPreviousPedagogicalElement",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasPreviousPedagogicalElement",
+      "undefined" : "hasPreviousPedagogicalElement"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "Relates a pedagogical element to an earlier element in an ordered framework sequence."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object", "transitive" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasName",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "173",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "hasName"
+    },
+    "domain" : "65",
+    "comment" : {
+      "undefined" : "Provides the required textual name for a learning objective or learning strategy."
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "174"
+  }, {
+    "range" : "48",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "175"
+  }, {
+    "range" : "48",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "range" : "65",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "177"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasElement",
+    "inverse" : "66",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasElement",
+      "undefined" : "hasElement"
+    },
+    "domain" : "65",
+    "comment" : {
+      "undefined" : "Relates a pedagogical framework to an element contained in that framework."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "178"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#scopes",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "105",
+    "label" : {
+      "IRI-based" : "scopes",
+      "undefined" : "scopes"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Relates a learning situation to a persona that scopes or contextualizes it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "179"
+  }, {
+    "range" : "28",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "range" : "45",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "181"
+  }, {
+    "range" : "45",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "19",
+    "domain" : "184",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "31",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "185"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isPersonaScopeOf",
+    "inverse" : "179",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "isPersonaScopeOf",
+      "undefined" : "isPersonaScopeOf"
+    },
+    "domain" : "105",
+    "comment" : {
+      "undefined" : "Inverse of scopes; relates a persona to learning situations scoped by it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "186"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
+  }, {
+    "range" : "8",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
+  }, {
+    "range" : "52",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
+  }, {
+    "range" : "20",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "range" : "96",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "191"
+  }, {
+    "range" : "45",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
+  }, {
+    "range" : "68",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "range" : "11",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "194"
+  }, {
+    "range" : "19",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "195"
+  }, {
+    "range" : "10",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "196"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isSkillObservedBy",
+    "inverse" : "106",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isSkillObservedBy",
+      "undefined" : "isSkillObservedBy"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Inverse of onSkill; relates a skill to awareness observations about that skill."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "197"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isLearningObjectiveOf",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "198",
+    "label" : {
+      "IRI-based" : "isLearningObjectiveOf",
+      "undefined" : "isLearningObjectiveOf"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Inverse of hasLearningObjective; relates a learning objective to a module or learning strategy that includes it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "61",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "199"
+  }, {
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#provideFeedback",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "provideFeedback",
+      "undefined" : "provideFeedback"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Relates an evaluation technique to a response or feedback artifact produced by that technique."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "201"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasEvaluationTechniqueType",
+    "inverse" : "103",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "hasEvaluationTechniqueType",
+      "undefined" : "hasEvaluationTechniqueType"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Relates an evaluation technique to a controlled type or category for that technique."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "202"
+  }, {
+    "range" : "31",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "203"
+  }, {
+    "range" : "52",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "204"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isUnitOf",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "isUnitOf",
+      "undefined" : "isUnitOf"
+    },
+    "domain" : "96",
+    "comment" : {
+      "undefined" : "Inverse of hasUnit; relates an evaluation metric to an evaluation result expressed with that metric."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "97"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#assessesLearningFeedback",
+    "inverse" : "46",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "assessesLearningFeedback",
+      "undefined" : "assessesLearningFeedback"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Relates an evaluation technique to learning feedback that the technique assesses."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "205"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#requiresTopic",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "requiresTopic",
+      "undefined" : "requiresTopic"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Relates a skill to a topic required for developing or applying that skill."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#evaluatesTopicAwarenessOf",
+    "inverse" : "29",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "evaluatesTopicAwarenessOf",
+      "undefined" : "evaluatesTopicAwarenessOf"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Relates an assessment exercise to the topic whose learner awareness is being evaluated."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "206"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#assessesLearningObjective",
+    "inverse" : "16",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "assessesLearningObjective",
+      "undefined" : "assessesLearningObjective"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Relates an evaluation technique to a learning objective that the technique assesses."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "someValues", "object" ],
+    "id" : "207"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isAwarenessObservationAffectedBy",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "isAwarenessObservationAffectedBy",
+      "undefined" : "isAwarenessObservationAffectedBy"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Inverse of affectsAwarenessObservation; relates an awareness observation to the response that influences it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "166"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isPriorTopicKnowledgeFor",
+    "inverse" : "114",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "isPriorTopicKnowledgeFor",
+      "undefined" : "isPriorTopicKnowledgeFor"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Inverse of requiresTopicKnowledge; relates a topic to learning situations requiring prior knowledge of it."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "208"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#affectsStrategy",
+    "inverse" : "109",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "affectsStrategy",
+      "undefined" : "affectsStrategy"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Relates learning feedback to a learning strategy that the feedback may influence."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "209"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#hasEvaluationMetric",
+    "inverse" : "100",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "hasEvaluationMetric",
+      "undefined" : "hasEvaluationMetric"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Relates an evaluation technique to the metric used to measure or report its result."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "210"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#assessesLearningFeedback",
+    "inverse" : "46",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "assessesLearningFeedback",
+      "undefined" : "assessesLearningFeedback"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Relates an evaluation technique to learning feedback that the technique assesses."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "211"
+  }, {
+    "iri" : "https://kastle-lab.org/aplo/lod/ontology#isAwarenessObservationOf",
+    "baseIri" : "https://kastle-lab.org/aplo/lod/ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "isAwarenessObservationOf",
+      "undefined" : "isAwarenessObservationOf"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Inverse of hasAwarenessObservation; relates an awareness observation to the learner it describes."
+    },
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "77"
+  } ]
+}

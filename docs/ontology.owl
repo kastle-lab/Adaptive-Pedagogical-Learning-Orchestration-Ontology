@@ -1,0 +1,1664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasNextPedagogicalElement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasPreviousPedagogicalElement"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+    <rdfs:comment>Relates a pedagogical element to a later element in an ordered framework sequence.</rdfs:comment>
+    <rdfs:label>hasNextPedagogicalElement</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isWorkloadLevelOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#WorkloadLevel"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationAssessmentExercise"/>
+    <rdfs:comment>Inverse of hasWorkloadLevel; relates a workload level to an assessment exercise assigned that level.</rdfs:comment>
+    <rdfs:label>isWorkloadLevelOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasEvaluationMetric">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isEvaluationMetricOf"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationMetric"/>
+    <rdfs:comment>Relates an evaluation technique to the metric used to measure or report its result.</rdfs:comment>
+    <rdfs:label>hasEvaluationMetric</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#EvaluationMetric">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb39"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb40"/>
+    <rdfs:comment>Represents the ability to capture what type of measurable unit of evaluation techniques was utilized.</rdfs:comment>
+    <rdfs:label>EvaluationMetric</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/currkg/lod/ontology#Module">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb103"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb104"/>
+    <rdfs:comment>Represents an instructional module that can include one or more learning objectives.</rdfs:comment>
+    <rdfs:comment>Represents an instructional module that includes one or more assessment exercises.</rdfs:comment>
+    <rdfs:comment>Represents an instructional module that includes one or more learning objectives.</rdfs:comment>
+    <rdfs:label>Module</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#Response">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb95"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb96"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb97"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb98"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb99"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:comment>Represents the ability to capture an explicit feedback message or system output delivered to a learner.</rdfs:comment>
+    <rdfs:label>Response</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationResult"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:comment>Provides the literal value recorded for an evaluation result.</rdfs:comment>
+    <rdfs:label>hasValue</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb33">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#atTime"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#TemporalExtent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasAwarenessLevel"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessLevel"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb72"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb73"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb74"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb75"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb76"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb77"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb78"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalFramework"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalObjective"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:comment>Represents the atomic finite element that is part of a pedagogical framework</rdfs:comment>
+    <rdfs:label>PedagogicalElement</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasGoal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isGoalOf"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Learner"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearnerGoal"/>
+    <rdfs:comment>Relates a learner to a learner-specific goal.</rdfs:comment>
+    <rdfs:label>hasGoal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasAssessmentExercise">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isAssessmentExerciseOf"/>
+    <rdfs:domain rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb1"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationAssessmentExercise"/>
+    <rdfs:comment>Relates a module or media resource to an assessment exercise included in or associated with that learning resource.</rdfs:comment>
+    <rdfs:label>hasAssessmentExercise</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isLearningFeedbackAssessedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningFeedback"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique"/>
+    <rdfs:comment>Inverse of assessesLearningFeedback; relates learning feedback to an evaluation technique that assesses it.</rdfs:comment>
+    <rdfs:label>isLearningFeedbackAssessedBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isAwarenessObservationOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Learner"/>
+    <rdfs:comment>Inverse of hasAwarenessObservation; relates an awareness observation to the learner it describes.</rdfs:comment>
+    <rdfs:label>isAwarenessObservationOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#LearningSituation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb64"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb65"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningStrategy"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:comment>Represents the ability to capture the current state or situation of a learner (e.g. learner context, prior knowledge, etc.).</rdfs:comment>
+    <rdfs:label>LearningSituation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasAwarenessLevel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isAwarenessLevelOf"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessLevel"/>
+    <rdfs:comment>Relates an awareness observation to the controlled awareness level assigned to it.</rdfs:comment>
+    <rdfs:label>hasAwarenessLevel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#evaluatesTopicAwarenessOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isTopicAwarenessEvaluatedBy"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationAssessmentExercise"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:comment>Relates an assessment exercise to the topic whose learner awareness is being evaluated.</rdfs:comment>
+    <rdfs:label>evaluatesTopicAwarenessOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb64">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#requiresTopicKnowledge"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb69">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasDescription"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb80">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasName"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#Agent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb27"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb28"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationAssessmentExercise"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationMetric"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearnerGoal"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningChallenge"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningSituation"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Response"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Skill"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#TemporalExtent"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:comment>Represents an actor or agentive entity, including learners, whose learning state can be modeled.</rdfs:comment>
+    <rdfs:comment>Represents an actor or agentive entity, such as a person, system, or service, that can originate a response.</rdfs:comment>
+    <rdfs:label>Agent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb91">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasName"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isLearningObjectiveAssessedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique"/>
+    <rdfs:comment>Inverse of assessesLearningObjective; relates a learning objective to an evaluation technique that assesses it.</rdfs:comment>
+    <rdfs:label>isLearningObjectiveAssessedBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#requiresTopicKnowledge">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningSituation"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:comment>Relates a learning situation to a topic that should be known beforehand.</rdfs:comment>
+    <rdfs:label>requiresTopicKnowledge</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#LastPedagogicalElement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+    <rdfs:comment>Represents the last element in an ordered pedagogical framework sequence.</rdfs:comment>
+    <rdfs:label>LastPedagogicalElement</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb11">
+    <rdf:first rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningStrategy"/>
+    <rdf:rest rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb12"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#LearningObjective">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb57"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb58"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb59"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb60"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb61"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb62"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb63"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningSituation"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningStrategy"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalFramework"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalObjective"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:comment>Represents the ability to capture a target learning outcome.</rdfs:comment>
+    <rdfs:label>LearningObjective</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb45">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#assessesLearningFeedback"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningFeedback"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isLearningObjectiveTargetedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#targetsLearningObjective"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique"/>
+    <rdfs:comment>Inverse of targetsLearningObjective; relates a learning objective to pedagogical techniques that target it.</rdfs:comment>
+    <rdfs:label>isLearningObjectiveTargetedBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasLearningChallenge">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isLearningChallengeOf"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Learner"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningChallenge"/>
+    <rdfs:comment>Relates a learner to a learning challenge, barrier, or need that may affect learning.</rdfs:comment>
+    <rdfs:label>hasLearningChallenge</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#worksOnSituation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningSituation"/>
+    <rdfs:comment>Relates a learning objective to a learning situation addressed by that objective.</rdfs:comment>
+    <rdfs:label>worksOnSituation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isResponseTimeOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#TemporalExtent"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Response"/>
+    <rdfs:comment>Inverse of hasResponseTime; relates a temporal extent to the response timed by it.</rdfs:comment>
+    <rdfs:label>isResponseTimeOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasPedagogicalTechnique">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isPedagogicalTechniqueOf"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningStrategy"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique"/>
+    <rdfs:comment>Relates a learning strategy to a pedagogical technique used by that strategy.</rdfs:comment>
+    <rdfs:label>hasPedagogicalTechnique</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb30">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#atTime"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#TemporalExtent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#Skill">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb100"/>
+    <rdfs:comment>Represents a lightweight bridge concept connecting learner goals, learning objectives, topics, and future alignment across external skill or labor market ontologies.</rdfs:comment>
+    <rdfs:label>Skill</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb102">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasAssessmentExercise"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationAssessmentExercise"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isPedagogicalElementSupportedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#supportsPedagogicalElement"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique"/>
+    <rdfs:comment>Inverse of supportsPedagogicalElement; relates a pedagogical element to techniques that support it.</rdfs:comment>
+    <rdfs:label>isPedagogicalElementSupportedBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isTargetSkillOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#targetsSkill"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Skill"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearnerGoal"/>
+    <rdfs:comment>Inverse of targetsSkill; relates a skill to learner goals that target it.</rdfs:comment>
+    <rdfs:label>isTargetSkillOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isAwarenessLevelOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessLevel"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation"/>
+    <rdfs:comment>Inverse of hasAwarenessLevel; relates an awareness level to observations assigned that level.</rdfs:comment>
+    <rdfs:label>isAwarenessLevelOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#alignedWith">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isAlignmentFor"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+    <rdfs:comment>Relates a learning objective to a pedagogical element with which the objective is aligned.</rdfs:comment>
+    <rdfs:label>alignedWith</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#servesPedagogicalObjective">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalObjective"/>
+    <rdfs:comment>Relates a pedagogical technique to an instructional objective that the technique serves.</rdfs:comment>
+    <rdfs:label>servesPedagogicalObjective</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#assessesLearningObjective">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isLearningObjectiveAssessedBy"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+    <rdfs:comment>Relates an evaluation technique to a learning objective that the technique assesses.</rdfs:comment>
+    <rdfs:label>assessesLearningObjective</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isEvaluationMetricOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationMetric"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique"/>
+    <rdfs:comment>Inverse of hasEvaluationMetric; relates an evaluation metric to the technique that uses it.</rdfs:comment>
+    <rdfs:label>isEvaluationMetricOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#LearningStrategy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb66"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb67"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb68"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb69"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb70"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb71"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:comment>Represents the ability to capture how instructional components come together in a teaching plan.</rdfs:comment>
+    <rdfs:label>LearningStrategy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isTimeOfAwarenessObservation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#TemporalExtent"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation"/>
+    <rdfs:comment>Inverse of atTime; relates a temporal extent to awareness observations recorded at that time.</rdfs:comment>
+    <rdfs:label>isTimeOfAwarenessObservation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb38">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasWorkloadLevel"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#WorkloadLevel"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb67">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasPedagogicalTechnique"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb3">
+    <rdf:first rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Module"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isTopicObservedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#onTopic"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation"/>
+    <rdfs:comment>Inverse of onTopic; relates a topic to awareness observations about that topic.</rdfs:comment>
+    <rdfs:label>isTopicObservedBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isLearningFeedbackTypeOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningFeedbackType"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningFeedback"/>
+    <rdfs:comment>Inverse of hasLearningFeedbackType; relates a feedback type to feedback instances classified by it.</rdfs:comment>
+    <rdfs:label>isLearningFeedbackTypeOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb20">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb21"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb66">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasLearningObjective"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/currkg/lod/ontology#Media">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb101"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb102"/>
+    <rdfs:comment>Represents a learning media resource that can support one or more learning objectives.</rdfs:comment>
+    <rdfs:comment>Represents a learning media resource that may include or be associated with assessment exercises.</rdfs:comment>
+    <rdfs:comment>Represents a learning media resource that supports one or more learning objectives.</rdfs:comment>
+    <rdfs:label>Media</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasEvaluationTechniqueType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isEvaluationTechniqueTypeOf"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechniqueType"/>
+    <rdfs:comment>Relates an evaluation technique to a controlled type or category for that technique.</rdfs:comment>
+    <rdfs:label>hasEvaluationTechniqueType</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isSituationWorkedOnBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#worksOnSituation"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningSituation"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+    <rdfs:comment>Inverse of worksOnSituation; relates a learning situation to learning objectives that address it.</rdfs:comment>
+    <rdfs:label>isSituationWorkedOnBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb84">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasName"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb6">
+    <rdf:first rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Module"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb13">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb14"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasPreviousPedagogicalElement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+    <rdfs:comment>Relates a pedagogical element to an earlier element in an ordered framework sequence.</rdfs:comment>
+    <rdfs:label>hasPreviousPedagogicalElement</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#Learner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Agent"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb48"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb49"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb50"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb51"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb52"/>
+    <rdfs:comment>Represents the individual learning agent whose goals, preferences, challenges, awareness, and learning situations are modeled for personalization.</rdfs:comment>
+    <rdfs:label>Learner</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#onSkill">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Skill"/>
+    <rdfs:comment>Relates an awareness observation to the skill that the observation is about.</rdfs:comment>
+    <rdfs:label>onSkill</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb93">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasDescription"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isAwarenessObservationAffectedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Response"/>
+    <rdfs:comment>Inverse of affectsAwarenessObservation; relates an awareness observation to the response that influences it.</rdfs:comment>
+    <rdfs:label>isAwarenessObservationAffectedBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasUnit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isUnitOf"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationResult"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationMetric"/>
+    <rdfs:comment>Relates an evaluation result to the metric or unit in which the result is expressed.</rdfs:comment>
+    <rdfs:label>hasUnit</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb43"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb44"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb45"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb46"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb47"/>
+    <rdfs:comment>Represents the ability to capture what evaluation methods are utilized for assessment.</rdfs:comment>
+    <rdfs:label>EvaluationTechnique</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb74">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isElementOf"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalFramework"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#asString">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationMetric"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:comment>Provides a literal string representation for an evaluation metric.</rdfs:comment>
+    <rdfs:label>asString</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb83">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasName"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb76">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasDescription"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb71">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasName"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb46">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#assessesLearningObjective"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isUnitOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationMetric"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationResult"/>
+    <rdfs:comment>Inverse of hasUnit; relates an evaluation metric to an evaluation result expressed with that metric.</rdfs:comment>
+    <rdfs:label>isUnitOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    <rdfs:comment>Full ontology containing the evaluation, learner model, learning objective, and pedagogical framework patterns for autonomous learning orchestration.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#AwarenessLevel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Represents a controlled vocabulary level that models a learner's awareness on a topic or skill.</rdfs:comment>
+    <rdfs:label>AwarenessLevel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#LearningFeedback">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Response"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb54"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb55"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb56"/>
+    <rdfs:comment>Represents the ability to capture an observation about a learner's performance or understanding.</rdfs:comment>
+    <rdfs:label>LearningFeedback</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb27">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasSituation"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningSituation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isAlignmentFor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+    <rdfs:comment>Inverse of alignedWith; relates a pedagogical element to learning objectives aligned with it.</rdfs:comment>
+    <rdfs:label>isAlignmentFor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#affectsStrategy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isStrategyAffectedBy"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningFeedback"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningStrategy"/>
+    <rdfs:comment>Relates learning feedback to a learning strategy that the feedback may influence.</rdfs:comment>
+    <rdfs:label>affectsStrategy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb49">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasAwarenessObservation"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#supportsPedagogicalElement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+    <rdfs:comment>Relates a pedagogical technique to a pedagogical element that the technique supports.</rdfs:comment>
+    <rdfs:label>supportsPedagogicalElement</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#scopes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningSituation"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Persona"/>
+    <rdfs:comment>Relates a learning situation to a persona that scopes or contextualizes it.</rdfs:comment>
+    <rdfs:label>scopes</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#PedagogicalFramework">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb79"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb80"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb81"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb82"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb83"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalObjective"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique"/>
+    <rdfs:comment>Represents the ability to capture a pedagogical framework used for instructional design</rdfs:comment>
+    <rdfs:label>PedagogicalFramework</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb62">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasDescription"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasAwarenessObservation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isAwarenessObservationOf"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Learner"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation"/>
+    <rdfs:comment>Relates a learner to awareness observations recorded for that learner.</rdfs:comment>
+    <rdfs:label>hasAwarenessObservation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb90">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#targetsLearningObjective"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb98">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasResponseTime"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#TemporalExtent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb51">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasLearnerPreference"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearnerPreference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#onTopic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:comment>Relates an awareness observation to the topic that the observation is about.</rdfs:comment>
+    <rdfs:label>onTopic</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isPedagogicalTechniqueOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningStrategy"/>
+    <rdfs:comment>Inverse of hasPedagogicalTechnique; relates a pedagogical technique to learning strategies that use it.</rdfs:comment>
+    <rdfs:label>isPedagogicalTechniqueOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#affectsAwarenessObservation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isAwarenessObservationAffectedBy"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Response"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation"/>
+    <rdfs:comment>Relates a response or evaluation result to an awareness observation that the response influences or updates.</rdfs:comment>
+    <rdfs:label>affectsAwarenessObservation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasSource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isSourceOf"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Response"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Source"/>
+    <rdfs:comment>Relates a response to the source or agentive origin that produced it.</rdfs:comment>
+    <rdfs:label>hasSource</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isLearningChallengeOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningChallenge"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Learner"/>
+    <rdfs:comment>Inverse of hasLearningChallenge; relates a learning challenge to the learner affected by it.</rdfs:comment>
+    <rdfs:label>isLearningChallengeOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb50">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasGoal"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearnerGoal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#requiresTopic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Skill"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:comment>Relates a skill to a topic required for developing or applying that skill.</rdfs:comment>
+    <rdfs:label>requiresTopic</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasElement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isElementOf"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalFramework"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+    <rdfs:comment>Relates a pedagogical framework to an element contained in that framework.</rdfs:comment>
+    <rdfs:label>hasElement</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb13"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Provides an optional textual description for a learning objective or learning strategy.</rdfs:comment>
+    <rdfs:comment>Provides an optional textual description for a pedagogical element, framework, objective, or technique.</rdfs:comment>
+    <rdfs:label>hasDescription</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#Source">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Agent"/>
+    <rdfs:comment>Represents the ability to capture an entity (teacher, LLM) that produced a Response.</rdfs:comment>
+    <rdfs:label>Source</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb59">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#worksOnSituation"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningSituation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasSituation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isSituationOf"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Learner"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningSituation"/>
+    <rdfs:comment>Relates a learner to a current or relevant learning situation.</rdfs:comment>
+    <rdfs:label>hasSituation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#assessesLearningFeedback">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isLearningFeedbackAssessedBy"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningFeedback"/>
+    <rdfs:comment>Relates an evaluation technique to learning feedback that the technique assesses.</rdfs:comment>
+    <rdfs:label>assessesLearningFeedback</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#PedagogicalObjective">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb84"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb85"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb86"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb87"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique"/>
+    <rdfs:comment>Represents the ability to capture an intended instructional effect or educational purpose that a pedagogical technique is designed to achieve, such as retention, recall, engagement, misconception diagnosis, knowledge transfer, or deeper conceptual understanding.</rdfs:comment>
+    <rdfs:label>PedagogicalObjective</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isPedagogicalObjectiveServedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#servesPedagogicalObjective"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalObjective"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique"/>
+    <rdfs:comment>Inverse of servesPedagogicalObjective; relates a pedagogical objective to techniques that serve it.</rdfs:comment>
+    <rdfs:label>isPedagogicalObjectiveServedBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isLearningObjectiveSupportedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#supportsLearningObjective"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Media"/>
+    <rdfs:comment>Inverse of supportsLearningObjective; relates a learning objective to media that supports it.</rdfs:comment>
+    <rdfs:label>isLearningObjectiveSupportedBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb2">
+    <rdf:first rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Media"/>
+    <rdf:rest rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#LearningChallenge">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Represents constraints, barriers, or needs that may affect a learner's ability to engage with instruction or learning material or process (complementary to preference).</rdfs:comment>
+    <rdfs:label>LearningChallenge</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb35">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#evaluatesTopicAwarenessOf"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb94">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasName"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb86">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasDescription"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb82">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasDescription"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb103">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasAssessmentExercise"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationAssessmentExercise"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb36">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasWorkloadLevel"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#WorkloadLevel"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb63">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasName"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb75">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasName"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb61">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasDescription"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isPersonaScopeOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#scopes"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Persona"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningSituation"/>
+    <rdfs:comment>Inverse of scopes; relates a persona to learning situations scoped by it.</rdfs:comment>
+    <rdfs:label>isPersonaScopeOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isPriorTopicKnowledgeFor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#requiresTopicKnowledge"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningSituation"/>
+    <rdfs:comment>Inverse of requiresTopicKnowledge; relates a topic to learning situations requiring prior knowledge of it.</rdfs:comment>
+    <rdfs:label>isPriorTopicKnowledgeFor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isAssessmentExerciseOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationAssessmentExercise"/>
+    <rdfs:range rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb7"/>
+    <rdfs:comment>Inverse of hasAssessmentExercise; relates an assessment exercise back to the media or module that includes it.</rdfs:comment>
+    <rdfs:label>isAssessmentExerciseOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb81">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasDescription"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isTopicRequiredBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#requiresTopic"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Skill"/>
+    <rdfs:comment>Inverse of requiresTopic; relates a topic to skills that require it.</rdfs:comment>
+    <rdfs:label>isTopicRequiredBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb18">
+    <rdf:first rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalObjective"/>
+    <rdf:rest rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb19"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#CurrentAwarenessObservation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation"/>
+    <rdfs:comment>Represents the current or active awareness observation used to describe a learner's present awareness observation over a scope.</rdfs:comment>
+    <rdfs:label>CurrentAwarenessObservation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb52">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasLearningChallenge"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningChallenge"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb73">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasPreviousPedagogicalElement"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isElementOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalFramework"/>
+    <rdfs:comment>Inverse of hasElement; relates a pedagogical element to the framework that contains it.</rdfs:comment>
+    <rdfs:label>isElementOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isEvaluationTechniqueTypeOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechniqueType"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique"/>
+    <rdfs:comment>Inverse of hasEvaluationTechniqueType; relates a technique type to evaluation techniques classified by it.</rdfs:comment>
+    <rdfs:label>isEvaluationTechniqueTypeOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasLearnerPreference">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isLearnerPreferenceOf"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Learner"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearnerPreference"/>
+    <rdfs:comment>Relates a learner to a preference used for personalization.</rdfs:comment>
+    <rdfs:label>hasLearnerPreference</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isGoalOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearnerGoal"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Learner"/>
+    <rdfs:comment>Inverse of hasGoal; relates a learner goal to the learner who has that goal.</rdfs:comment>
+    <rdfs:label>isGoalOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb56">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasLearningFeedbackType"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningFeedbackType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb96">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#affectsAwarenessObservation"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb29"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb30"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb31"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb32"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb33"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb34"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:comment>Represents an observation or assessment event that estimates a learner's awareness of a topic or skill.</rdfs:comment>
+    <rdfs:label>AwarenessObservation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isSkillObservedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#onSkill"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Skill"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation"/>
+    <rdfs:comment>Inverse of onSkill; relates a skill to awareness observations about that skill.</rdfs:comment>
+    <rdfs:label>isSkillObservedBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb28">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isSourceOf"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Response"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#LearningFeedbackType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Represents the ability to capture categories of feedback like "corrective feedback", "motivational feedback", etc. These are controlled vocabulary classifications.</rdfs:comment>
+    <rdfs:label>LearningFeedbackType</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasLearningFeedbackType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isLearningFeedbackTypeOf"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningFeedback"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningFeedbackType"/>
+    <rdfs:comment>Relates learning feedback to a controlled feedback type or category.</rdfs:comment>
+    <rdfs:label>hasLearningFeedbackType</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb89">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#supportsPedagogicalElement"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#targetsLearningObjective">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+    <rdfs:comment>Relates a pedagogical technique to a learning objective targeted by that technique.</rdfs:comment>
+    <rdfs:label>targetsLearningObjective</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#TemporalExtent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Represents a time point, interval, or duration associated with a response or evaluation event.</rdfs:comment>
+    <rdfs:comment>Represents a time point, interval, or duration associated with an awareness observation.</rdfs:comment>
+    <rdfs:label>TemporalExtent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb78">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasName"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isSituationOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningSituation"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Learner"/>
+    <rdfs:comment>Inverse of hasSituation; relates a learning situation to the learner it describes.</rdfs:comment>
+    <rdfs:label>isSituationOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isLearnerPreferenceOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearnerPreference"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Learner"/>
+    <rdfs:comment>Inverse of hasLearnerPreference; relates a learner preference to the learner it personalizes.</rdfs:comment>
+    <rdfs:label>isLearnerPreferenceOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isSourceOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Source"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Response"/>
+    <rdfs:comment>Inverse of hasSource; relates a source to a response produced by that source.</rdfs:comment>
+    <rdfs:label>isSourceOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#usesTechnique">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationAssessmentExercise"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique"/>
+    <rdfs:comment>Relates an assessment exercise to the evaluation technique used by that exercise.</rdfs:comment>
+    <rdfs:label>usesTechnique</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#EvaluationAssessmentExercise">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb35"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb36"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb37"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb38"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:comment>Represents an assessment activity or exercise through which a learner's understanding, awareness, or performance is evaluated with respect to a topic, skill, or learning objective.</rdfs:comment>
+    <rdfs:label>EvaluationAssessmentExercise</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb37">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#usesTechnique"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb85">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasDescription"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb72">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasNextPedagogicalElement"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb92">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasDescription"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasResponseTime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isResponseTimeOf"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Response"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#TemporalExtent"/>
+    <rdfs:comment>Relates a response or evaluation result to the time or duration associated with that response.</rdfs:comment>
+    <rdfs:label>hasResponseTime</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#targetsSkill">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearnerGoal"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Skill"/>
+    <rdfs:comment>Relates a learner goal to the skill targeted by that goal.</rdfs:comment>
+    <rdfs:label>targetsSkill</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isLearningObjectiveOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+    <rdfs:range rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb10"/>
+    <rdfs:comment>Inverse of hasLearningObjective; relates a learning objective to a module or learning strategy that includes it.</rdfs:comment>
+    <rdfs:label>isLearningObjectiveOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb99">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasSource"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Source"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb43">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasEvaluationMetric"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationMetric"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb60">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasName"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb88"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb89"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb90"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb91"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb92"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb93"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb94"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:comment>Represents the ability to capture a specific instructional method that is used in instructional design</rdfs:comment>
+    <rdfs:label>PedagogicalTechnique</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb87">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasName"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb106">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#assessesLearningObjective"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+    <rdfs:subClassOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechniqueType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Represents the ability to capture categories of evaluation techniques, like "summative/formative", "automated", etc. These are controlled vocabulary classifications.</rdfs:comment>
+    <rdfs:label>EvaluationTechniqueType</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb70">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasDescription"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb40">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#asString"/>
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isTopicAwarenessEvaluatedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationAssessmentExercise"/>
+    <rdfs:comment>Inverse of evaluatesTopicAwarenessOf; relates a topic to an assessment exercise evaluating awareness of it.</rdfs:comment>
+    <rdfs:label>isTopicAwarenessEvaluatedBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb44">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasEvaluationTechniqueType"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechniqueType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/currkg/lod/ontology#Persona">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Represents a learner persona used to scope or contextualize a learning situation.</rdfs:comment>
+    <rdfs:label>Persona</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb100">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#requiresTopic"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb55">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#affectsStrategy"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningStrategy"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb16">
+    <rdf:first rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+    <rdf:rest rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb17"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasLearningObjective">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isLearningObjectiveOf"/>
+    <rdfs:domain rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb4"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+    <rdfs:comment>Relates a module or learning strategy to a learning objective it includes.</rdfs:comment>
+    <rdfs:comment>Relates an instructional module to a learning objective included in that module.</rdfs:comment>
+    <rdfs:label>hasLearningObjective</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isStrategyAffectedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningStrategy"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningFeedback"/>
+    <rdfs:comment>Inverse of affectsStrategy; relates a learning strategy to feedback that may influence it.</rdfs:comment>
+    <rdfs:label>isStrategyAffectedBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#provideFeedback">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Response"/>
+    <rdfs:comment>Relates an evaluation technique to a response or feedback artifact produced by that technique.</rdfs:comment>
+    <rdfs:label>provideFeedback</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasWorkloadLevel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isWorkloadLevelOf"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationAssessmentExercise"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#WorkloadLevel"/>
+    <rdfs:comment>Relates an assessment exercise to the controlled workload level assigned to it.</rdfs:comment>
+    <rdfs:label>hasWorkloadLevel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb32">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#onTopic"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb23">
+    <rdf:first rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+    <rdf:rest rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb24"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#supportsLearningObjective">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Media"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+    <rdfs:comment>Relates a media resource to a learning objective supported by that resource.</rdfs:comment>
+    <rdfs:label>supportsLearningObjective</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isTechniqueUsedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#usesTechnique"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationAssessmentExercise"/>
+    <rdfs:comment>Inverse of usesTechnique; relates an evaluation technique to an assessment exercise that uses it.</rdfs:comment>
+    <rdfs:label>isTechniqueUsedBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isFeedbackProvidedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#provideFeedback"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Response"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique"/>
+    <rdfs:comment>Inverse of provideFeedback; relates a response or feedback artifact to the evaluation technique that produced it.</rdfs:comment>
+    <rdfs:label>isFeedbackProvidedBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#developsSkill">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isSkillDevelopedBy"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Skill"/>
+    <rdfs:comment>Relates a learning objective to a skill that the objective is intended to develop.</rdfs:comment>
+    <rdfs:label>developsSkill</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#isSkillDevelopedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Skill"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+    <rdfs:comment>Inverse of developsSkill; relates a skill to learning objectives that develop it.</rdfs:comment>
+    <rdfs:label>isSkillDevelopedBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb25">
+    <rdf:first rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalObjective"/>
+    <rdf:rest rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb26"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb17">
+    <rdf:first rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalFramework"/>
+    <rdf:rest rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb18"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb58">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#alignedWith"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#LearnerGoal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb53"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:comment>Represents a learner-specific goal, such as acquiring a skill or reaching a target learning outcome.</rdfs:comment>
+    <rdfs:label>LearnerGoal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/currkg/lod/ontology#Topic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Represents a subject matter topic required by skills or observed in learner awareness.</rdfs:comment>
+    <rdfs:comment>Represents a subject matter topic that can be evaluated for learner awareness or understanding.</rdfs:comment>
+    <rdfs:comment>Represents a subject matter topic that can be required as prior knowledge for a learning situation.</rdfs:comment>
+    <rdfs:label>Topic</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb9">
+    <rdf:first rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Module"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb57">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#developsSkill"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Skill"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb24">
+    <rdf:first rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalFramework"/>
+    <rdf:rest rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb25"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb39">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#asString"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb101">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#supportsLearningObjective"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb12">
+    <rdf:first rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Module"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#FirstPedagogicalElement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+    <rdfs:comment>Represents the first element in an ordered pedagogical framework sequence.</rdfs:comment>
+    <rdfs:label>FirstPedagogicalElement</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb11"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb31">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#onSkill"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Skill"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb105">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#assessesLearningFeedback"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningFeedback"/>
+    <rdfs:subClassOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb97">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasResponseTime"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#TemporalExtent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#hasName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb20"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Provides the required textual name for a learning objective or learning strategy.</rdfs:comment>
+    <rdfs:comment>Provides the required textual name for a pedagogical element, framework, objective, or technique.</rdfs:comment>
+    <rdfs:label>hasName</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb53">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#targetsSkill"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Skill"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb108">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasEvaluationTechniqueType"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechniqueType"/>
+    <rdfs:subClassOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb15">
+    <rdf:first rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningStrategy"/>
+    <rdf:rest rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb16"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb34">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasAwarenessLevel"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessLevel"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb107">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#evaluatesTopicAwarenessOf"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Topic"/>
+    <rdfs:subClassOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationAssessmentExercise"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#LearnerPreference">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningChallenge"/>
+    <rdfs:comment>Represents learner-specific preferences used to personalize instruction, resources, feedback, delivery and recommendations (complementary to challenge).</rdfs:comment>
+    <rdfs:label>LearnerPreference</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb77">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasDescription"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#atTime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <owl:inverseOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#isTimeOfAwarenessObservation"/>
+    <rdfs:domain rdf:resource="https://kastle-lab.org/aplo/lod/ontology#AwarenessObservation"/>
+    <rdfs:range rdf:resource="https://kastle-lab.org/aplo/lod/ontology#TemporalExtent"/>
+    <rdfs:comment>Relates an awareness observation to the time point, interval, or duration at which it was made.</rdfs:comment>
+    <rdfs:label>atTime</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb65">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#scopes"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Persona"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb41">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasUnit"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationMetric"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb19">
+    <rdf:first rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb14">
+    <rdf:first rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+    <rdf:rest rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb15"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb109">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#provideFeedback"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Response"/>
+    <rdfs:subClassOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#EvaluationTechnique"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb95">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasSource"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Source"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb47">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#provideFeedback"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Response"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb79">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasElement"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#WorkloadLevel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Represents a controlled vocabulary level that models the estimated effort, time commitment, or assessment burden associated.</rdfs:comment>
+    <rdfs:label>WorkloadLevel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb21">
+    <rdf:first rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+    <rdf:rest rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb22"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb5">
+    <rdf:first rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningStrategy"/>
+    <rdf:rest rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb26">
+    <rdf:first rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalTechnique"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb48">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasSituation"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningSituation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#AccessibilityChallenge">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningChallenge"/>
+    <rdfs:comment>Represents a specialized (subclass of) learning challenge related to accessibility needs, such as captions, screen-reader compatibility, alternative media, or extended time.</rdfs:comment>
+    <rdfs:label>AccessibilityChallenge</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb88">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#servesPedagogicalObjective"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#PedagogicalObjective"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb54">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasLearningFeedbackType"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningFeedbackType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://kastle-lab.org/aplo/lod/ontology#EvaluationResult">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://kastle-lab.org/aplo/lod/ontology#Response"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb41"/>
+    <rdfs:subClassOf rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb42"/>
+    <rdfs:comment>Represents the ability to capture what measurable value of evaluation technique was utilized.</rdfs:comment>
+    <rdfs:label>EvaluationResult</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb68">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasName"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb104">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasLearningObjective"/>
+    <owl:someValuesFrom rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningObjective"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb42">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://kastle-lab.org/aplo/lod/ontology#hasValue"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb22">
+    <rdf:first rdf:resource="https://kastle-lab.org/aplo/lod/ontology#LearningStrategy"/>
+    <rdf:rest rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb23"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb8">
+    <rdf:first rdf:resource="https://kastle-lab.org/currkg/lod/ontology#Media"/>
+    <rdf:rest rdf:nodeID="nf22395739d4d49c9825a1089b3ed5adeb9"/>
+  </rdf:Description>
+</rdf:RDF>
