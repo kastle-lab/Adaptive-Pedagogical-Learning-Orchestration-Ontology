@@ -1,18 +1,18 @@
 @prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
 @prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:evaluationAssessmentExercise.OWL.RDF%20RDFS%20Mastery%20Reassessment a aplo-ont:EvaluationAssessmentExercise ;
     rdf:value "OWL"^^xsd:string,
         "RDF RDFS Mastery Reassessment"^^xsd:string ;
-    aplo-ont:evaluatesTopicAwarenessOf edu-r:topic.Schema ;
+    aplo-ont:evaluatesTopicAwarenessOf currkg-r:topic.Schema ;
     aplo-ont:hasWorkloadLevel aplo-r:workloadLevel.Moderate%20Workload ;
     aplo-ont:usesTechnique aplo-r:evaluationTechnique.Mastery%20Reassessment .
 
-edu-r:topic.Schema a edu-ont:Topic ;
+currkg-r:topic.Schema a currkg:Topic ;
     rdf:value "Schema"^^xsd:string .
 
 aplo-r:evaluationTechnique.Mastery%20Reassessment a aplo-ont:EvaluationTechnique ;

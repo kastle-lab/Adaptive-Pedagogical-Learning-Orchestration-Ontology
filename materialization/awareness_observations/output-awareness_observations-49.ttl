@@ -1,7 +1,7 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -17,7 +17,7 @@ aplo-r:awarenessObservation.Learner%20Silas.Ontology.Semantic%20Web%20History%20
     aplo-ont:atTime aplo-r:temporalExtent.Learner%20Silas.Ontology.Semantic%20Web%20History%20Explanation.Semantic%20Web%20History%20Explanation%20Application%20Snapshot.2026-03-12T14%3A03%3A00Z%20to%202026-03-12T14%3A28%3A00Z ;
     aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Working%20Awareness ;
     aplo-ont:onSkill aplo-r:skill.Semantic%20Web%20History%20Explanation ;
-    aplo-ont:onTopic edu-r:topic.Ontology .
+    aplo-ont:onTopic currkg-r:topic.Ontology .
 
 aplo-r:skill.Semantic%20Web%20History%20Explanation a aplo-ont:Skill ;
     rdf:value "Semantic Web History Explanation"^^xsd:string .
@@ -28,6 +28,6 @@ aplo-r:temporalExtent.Learner%20Silas.Ontology.Semantic%20Web%20History%20Explan
         "ISO 8601 UTC"^^xsd:string,
         "TimeInterval"^^xsd:string .
 
-edu-r:topic.Ontology a edu-ont:Topic ;
+currkg-r:topic.Ontology a currkg:Topic ;
     rdf:value "Ontology"^^xsd:string .
 

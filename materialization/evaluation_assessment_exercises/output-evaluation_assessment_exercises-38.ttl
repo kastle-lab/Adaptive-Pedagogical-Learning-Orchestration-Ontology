@@ -1,30 +1,30 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:evaluationAssessmentExercise.Survey%20of%20Modeling%20Tools.Modeling%20Tool%20Selection%20Matrix a aplo-ont:EvaluationAssessmentExercise ;
     rdf:value "Modeling Tool Selection Matrix"^^xsd:string,
         "Survey of Modeling Tools"^^xsd:string ;
-    aplo-ont:evaluatesTopicAwarenessOf edu-r:topic.DataWorld,
-        edu-r:topic.PoolParty,
-        edu-r:topic.Protege,
-        edu-r:topic.TopBraid%20Composer ;
+    aplo-ont:evaluatesTopicAwarenessOf currkg-r:topic.DataWorld,
+        currkg-r:topic.PoolParty,
+        currkg-r:topic.Protege,
+        currkg-r:topic.TopBraid%20Composer ;
     aplo-ont:hasWorkloadLevel aplo-r:workloadLevel.Moderate%20Workload ;
     aplo-ont:usesTechnique aplo-r:evaluationTechnique.Short%20Explanation%20Rubric .
 
-edu-r:topic.DataWorld a edu-ont:Topic ;
+currkg-r:topic.DataWorld a currkg:Topic ;
     rdf:value "DataWorld"^^xsd:string .
 
-edu-r:topic.PoolParty a edu-ont:Topic ;
+currkg-r:topic.PoolParty a currkg:Topic ;
     rdf:value "PoolParty"^^xsd:string .
 
-edu-r:topic.Protege a edu-ont:Topic ;
+currkg-r:topic.Protege a currkg:Topic ;
     rdf:value "Protege"^^xsd:string .
 
-edu-r:topic.TopBraid%20Composer a edu-ont:Topic ;
+currkg-r:topic.TopBraid%20Composer a currkg:Topic ;
     rdf:value "TopBraid Composer"^^xsd:string .
 
 aplo-r:evaluationTechnique.Short%20Explanation%20Rubric a aplo-ont:EvaluationTechnique ;

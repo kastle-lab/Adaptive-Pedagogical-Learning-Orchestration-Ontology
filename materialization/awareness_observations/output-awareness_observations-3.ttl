@@ -1,7 +1,7 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -17,7 +17,7 @@ aplo-r:awarenessObservation.Learner%20Blair.URI.Linked%20Data%20Identifier%20Rec
     aplo-ont:atTime aplo-r:temporalExtent.Learner%20Blair.URI.Linked%20Data%20Identifier%20Recognition.Identifier%20Awareness%20After%20Check.2026-01-15T10%3A00%3A00Z%20to%202026-01-15T10%3A08%3A00Z ;
     aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Basic%20Awareness ;
     aplo-ont:onSkill aplo-r:skill.Linked%20Data%20Identifier%20Recognition ;
-    aplo-ont:onTopic edu-r:topic.URI .
+    aplo-ont:onTopic currkg-r:topic.URI .
 
 aplo-r:skill.Linked%20Data%20Identifier%20Recognition a aplo-ont:Skill ;
     rdf:value "Linked Data Identifier Recognition"^^xsd:string .
@@ -28,6 +28,6 @@ aplo-r:temporalExtent.Learner%20Blair.URI.Linked%20Data%20Identifier%20Recogniti
         "ISO 8601 UTC"^^xsd:string,
         "TimeInterval"^^xsd:string .
 
-edu-r:topic.URI a edu-ont:Topic ;
+currkg-r:topic.URI a currkg:Topic ;
     rdf:value "URI"^^xsd:string .
 

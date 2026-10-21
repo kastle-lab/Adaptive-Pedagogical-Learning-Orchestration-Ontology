@@ -26,8 +26,8 @@ root:
         val_source: "Evaluation Assessment Exercise Context"
     - p: "aplo-ont:evaluatesTopicAwarenessOf"
       o:
-        type: "edu-ont:Topic"
-        uri: "edu-r:topic"
+        type: "currkg:Topic"
+        uri: "currkg-r:topic"
         varids: ["Evaluates Topic Awareness Of"]
         split: " | "
         connections:

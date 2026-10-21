@@ -1,58 +1,58 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:skill.RDF%20Graph%20Interpretation a aplo-ont:Skill ;
     rdf:value "RDF Graph Interpretation"^^xsd:string ;
-    aplo-ont:requiresTopic edu-r:topic.Blank%20Node,
-        edu-r:topic.Blank%20Nodes,
-        edu-r:topic.Class,
-        edu-r:topic.Literals,
-        edu-r:topic.Namespace,
-        edu-r:topic.Namespaces,
-        edu-r:topic.Object,
-        edu-r:topic.Predicate,
-        edu-r:topic.Property,
-        edu-r:topic.Subject,
-        edu-r:topic.Triple,
-        edu-r:topic.Type .
+    aplo-ont:requiresTopic currkg-r:topic.Blank%20Node,
+        currkg-r:topic.Blank%20Nodes,
+        currkg-r:topic.Class,
+        currkg-r:topic.Literals,
+        currkg-r:topic.Namespace,
+        currkg-r:topic.Namespaces,
+        currkg-r:topic.Object,
+        currkg-r:topic.Predicate,
+        currkg-r:topic.Property,
+        currkg-r:topic.Subject,
+        currkg-r:topic.Triple,
+        currkg-r:topic.Type .
 
-edu-r:topic.Blank%20Node a edu-ont:Topic ;
+currkg-r:topic.Blank%20Node a currkg:Topic ;
     rdf:value "Blank Node"^^xsd:string .
 
-edu-r:topic.Blank%20Nodes a edu-ont:Topic ;
+currkg-r:topic.Blank%20Nodes a currkg:Topic ;
     rdf:value "Blank Nodes"^^xsd:string .
 
-edu-r:topic.Class a edu-ont:Topic ;
+currkg-r:topic.Class a currkg:Topic ;
     rdf:value "Class"^^xsd:string .
 
-edu-r:topic.Literals a edu-ont:Topic ;
+currkg-r:topic.Literals a currkg:Topic ;
     rdf:value "Literals"^^xsd:string .
 
-edu-r:topic.Namespace a edu-ont:Topic ;
+currkg-r:topic.Namespace a currkg:Topic ;
     rdf:value "Namespace"^^xsd:string .
 
-edu-r:topic.Namespaces a edu-ont:Topic ;
+currkg-r:topic.Namespaces a currkg:Topic ;
     rdf:value "Namespaces"^^xsd:string .
 
-edu-r:topic.Object a edu-ont:Topic ;
+currkg-r:topic.Object a currkg:Topic ;
     rdf:value "Object"^^xsd:string .
 
-edu-r:topic.Predicate a edu-ont:Topic ;
+currkg-r:topic.Predicate a currkg:Topic ;
     rdf:value "Predicate"^^xsd:string .
 
-edu-r:topic.Property a edu-ont:Topic ;
+currkg-r:topic.Property a currkg:Topic ;
     rdf:value "Property"^^xsd:string .
 
-edu-r:topic.Subject a edu-ont:Topic ;
+currkg-r:topic.Subject a currkg:Topic ;
     rdf:value "Subject"^^xsd:string .
 
-edu-r:topic.Triple a edu-ont:Topic ;
+currkg-r:topic.Triple a currkg:Topic ;
     rdf:value "Triple"^^xsd:string .
 
-edu-r:topic.Type a edu-ont:Topic ;
+currkg-r:topic.Type a currkg:Topic ;
     rdf:value "Type"^^xsd:string .
 

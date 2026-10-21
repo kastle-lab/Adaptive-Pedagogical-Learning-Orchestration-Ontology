@@ -1,30 +1,30 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:skill.OWL%20Axiom%20Analysis a aplo-ont:Skill ;
     rdf:value "OWL Axiom Analysis"^^xsd:string ;
-    aplo-ont:requiresTopic edu-r:topic.Axiom,
-        edu-r:topic.Cardinality,
-        edu-r:topic.Disjointness,
-        edu-r:topic.Equivalence,
-        edu-r:topic.OWL .
+    aplo-ont:requiresTopic currkg-r:topic.Axiom,
+        currkg-r:topic.Cardinality,
+        currkg-r:topic.Disjointness,
+        currkg-r:topic.Equivalence,
+        currkg-r:topic.OWL .
 
-edu-r:topic.Axiom a edu-ont:Topic ;
+currkg-r:topic.Axiom a currkg:Topic ;
     rdf:value "Axiom"^^xsd:string .
 
-edu-r:topic.Cardinality a edu-ont:Topic ;
+currkg-r:topic.Cardinality a currkg:Topic ;
     rdf:value "Cardinality"^^xsd:string .
 
-edu-r:topic.Disjointness a edu-ont:Topic ;
+currkg-r:topic.Disjointness a currkg:Topic ;
     rdf:value "Disjointness"^^xsd:string .
 
-edu-r:topic.Equivalence a edu-ont:Topic ;
+currkg-r:topic.Equivalence a currkg:Topic ;
     rdf:value "Equivalence"^^xsd:string .
 
-edu-r:topic.OWL a edu-ont:Topic ;
+currkg-r:topic.OWL a currkg:Topic ;
     rdf:value "OWL"^^xsd:string .
 

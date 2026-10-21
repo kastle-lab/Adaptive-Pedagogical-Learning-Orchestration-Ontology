@@ -43,8 +43,8 @@ root:
                     val_source: "Awareness Level"
           - p: "aplo-ont:onTopic"
             o:
-              type: "edu-ont:Topic"
-              uri: "edu-r:topic"
+              type: "currkg:Topic"
+              uri: "currkg-r:topic"
               varids: ["Topic"]
               connections:
                 - p: "rdf:value"

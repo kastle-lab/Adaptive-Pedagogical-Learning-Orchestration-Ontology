@@ -1,11 +1,11 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-edu-r:media.Schema.org a edu-ont:Media ;
+currkg-r:media.Schema.org a currkg:Media ;
     rdf:value "Schema.org"^^xsd:string ;
     aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.Schema.org.Schema.org%20Alignment%20Exercise ;
     aplo-ont:supportsLearningObjective aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Align%20Schema.org%20vocabulary%20terms .

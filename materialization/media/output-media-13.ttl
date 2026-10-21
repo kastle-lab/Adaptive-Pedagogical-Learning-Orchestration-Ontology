@@ -1,11 +1,11 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-edu-r:media.RDF%20Serializations a edu-ont:Media ;
+currkg-r:media.RDF%20Serializations a currkg:Media ;
     rdf:value "RDF Serializations"^^xsd:string ;
     aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.RDF%20Serializations.Serialization%20Format%20Comparison%20Brief ;
     aplo-ont:supportsLearningObjective aplo-r:learningObjective.User%20Engagement%20KG%20Demonstration%20Planning.Compare%20RDF%20serialization%20choices .

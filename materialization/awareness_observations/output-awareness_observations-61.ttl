@@ -1,7 +1,7 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -18,7 +18,7 @@ aplo-r:awarenessObservation.Learner%20Riley.Query.GraphQL%20Query%20Mapping.KG%2
     aplo-ont:atTime aplo-r:temporalExtent.Learner%20Riley.Query.GraphQL%20Query%20Mapping.KG%20Resource%20Development%20Awareness.2026-03-24T14%3A40%3A00Z ;
     aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Basic%20Awareness ;
     aplo-ont:onSkill aplo-r:skill.GraphQL%20Query%20Mapping ;
-    aplo-ont:onTopic edu-r:topic.Query .
+    aplo-ont:onTopic currkg-r:topic.Query .
 
 aplo-r:skill.GraphQL%20Query%20Mapping a aplo-ont:Skill ;
     rdf:value "GraphQL Query Mapping"^^xsd:string .
@@ -28,6 +28,6 @@ aplo-r:temporalExtent.Learner%20Riley.Query.GraphQL%20Query%20Mapping.KG%20Resou
         "PointInTime"^^xsd:string ;
     time:inXSDDateTime "2026-03-24T14:40:00+00:00"^^xsd:dateTime .
 
-edu-r:topic.Query a edu-ont:Topic ;
+currkg-r:topic.Query a currkg:Topic ;
     rdf:value "Query"^^xsd:string .
 

@@ -1,11 +1,11 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-edu-r:module.PROV-O a edu-ont:Module ;
+currkg-r:module.PROV-O a currkg:Module ;
     rdf:value "PROV-O"^^xsd:string ;
     aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.PROV-O.Provenance%20Chain%20Modeling%20Task ;
     aplo-ont:hasLearningObjective aplo-r:learningObjective.Collaborative%20KG%20Delivery%20Planning.Model%20provenance%20relationships%20with%20PROV-O .

@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @base <https://kastle-lab.org/aplo/lod/ontology#> .

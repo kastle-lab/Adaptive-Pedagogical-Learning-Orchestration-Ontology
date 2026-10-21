@@ -1,7 +1,7 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -17,7 +17,7 @@ aplo-r:awarenessObservation.Learner%20Chris.Metadata.Open%20Graph%20Metadata%20M
     aplo-ont:atTime aplo-r:temporalExtent.Learner%20Chris.Metadata.Open%20Graph%20Metadata%20Mapping.Open%20Graph%20Metadata%20Mapping%20Revision%20State.2026-03-18T13%3A35%3A00Z%20to%202026-03-18T14%3A00%3A00Z ;
     aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Working%20Awareness ;
     aplo-ont:onSkill aplo-r:skill.Open%20Graph%20Metadata%20Mapping ;
-    aplo-ont:onTopic edu-r:topic.Metadata .
+    aplo-ont:onTopic currkg-r:topic.Metadata .
 
 aplo-r:skill.Open%20Graph%20Metadata%20Mapping a aplo-ont:Skill ;
     rdf:value "Open Graph Metadata Mapping"^^xsd:string .
@@ -28,6 +28,6 @@ aplo-r:temporalExtent.Learner%20Chris.Metadata.Open%20Graph%20Metadata%20Mapping
         "ISO 8601 UTC"^^xsd:string,
         "TimeInterval"^^xsd:string .
 
-edu-r:topic.Metadata a edu-ont:Topic ;
+currkg-r:topic.Metadata a currkg:Topic ;
     rdf:value "Metadata"^^xsd:string .
 

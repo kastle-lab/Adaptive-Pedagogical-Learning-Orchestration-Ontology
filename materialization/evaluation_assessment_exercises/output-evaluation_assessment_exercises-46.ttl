@@ -1,18 +1,18 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:evaluationAssessmentExercise.Introduction%20to%20Upper%20Ontologies.Upper%20Ontology%20Alignment%20Review a aplo-ont:EvaluationAssessmentExercise ;
     rdf:value "Introduction to Upper Ontologies"^^xsd:string,
         "Upper Ontology Alignment Review"^^xsd:string ;
-    aplo-ont:evaluatesTopicAwarenessOf edu-r:topic.Ontology ;
+    aplo-ont:evaluatesTopicAwarenessOf currkg-r:topic.Ontology ;
     aplo-ont:hasWorkloadLevel aplo-r:workloadLevel.High%20Workload ;
     aplo-ont:usesTechnique aplo-r:evaluationTechnique.Ontology%20Modeling%20Review .
 
-edu-r:topic.Ontology a edu-ont:Topic ;
+currkg-r:topic.Ontology a currkg:Topic ;
     rdf:value "Ontology"^^xsd:string .
 
 aplo-r:evaluationTechnique.Ontology%20Modeling%20Review a aplo-ont:EvaluationTechnique ;

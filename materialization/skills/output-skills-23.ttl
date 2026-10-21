@@ -1,34 +1,34 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:skill.Discrete%20Relation%20Property%20Recognition a aplo-ont:Skill ;
     rdf:value "Discrete Relation Property Recognition"^^xsd:string ;
-    aplo-ont:requiresTopic edu-r:topic.Domain,
-        edu-r:topic.Functionality,
-        edu-r:topic.Inverse,
-        edu-r:topic.Range,
-        edu-r:topic.Reflexivity,
-        edu-r:topic.Transitivity .
+    aplo-ont:requiresTopic currkg-r:topic.Domain,
+        currkg-r:topic.Functionality,
+        currkg-r:topic.Inverse,
+        currkg-r:topic.Range,
+        currkg-r:topic.Reflexivity,
+        currkg-r:topic.Transitivity .
 
-edu-r:topic.Domain a edu-ont:Topic ;
+currkg-r:topic.Domain a currkg:Topic ;
     rdf:value "Domain"^^xsd:string .
 
-edu-r:topic.Functionality a edu-ont:Topic ;
+currkg-r:topic.Functionality a currkg:Topic ;
     rdf:value "Functionality"^^xsd:string .
 
-edu-r:topic.Inverse a edu-ont:Topic ;
+currkg-r:topic.Inverse a currkg:Topic ;
     rdf:value "Inverse"^^xsd:string .
 
-edu-r:topic.Range a edu-ont:Topic ;
+currkg-r:topic.Range a currkg:Topic ;
     rdf:value "Range"^^xsd:string .
 
-edu-r:topic.Reflexivity a edu-ont:Topic ;
+currkg-r:topic.Reflexivity a currkg:Topic ;
     rdf:value "Reflexivity"^^xsd:string .
 
-edu-r:topic.Transitivity a edu-ont:Topic ;
+currkg-r:topic.Transitivity a currkg:Topic ;
     rdf:value "Transitivity"^^xsd:string .
 

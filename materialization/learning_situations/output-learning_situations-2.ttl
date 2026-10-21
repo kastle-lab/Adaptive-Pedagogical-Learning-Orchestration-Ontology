@@ -1,22 +1,22 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:learningSituation.Identifier%20Practice%20Session a aplo-ont:LearningSituation ;
     rdf:value "Identifier Practice Session"^^xsd:string ;
-    aplo-ont:requiresTopicKnowledge edu-r:topic.Namespace,
-        edu-r:topic.URI ;
-    aplo-ont:scopes edu-r:persona.Debbie .
+    aplo-ont:requiresTopicKnowledge currkg-r:topic.Namespace,
+        currkg-r:topic.URI ;
+    aplo-ont:scopes currkg-r:persona.Debbie .
 
-edu-r:persona.Debbie a edu-ont:Persona ;
+currkg-r:persona.Debbie a currkg:Persona ;
     rdf:value "Debbie"^^xsd:string .
 
-edu-r:topic.Namespace a edu-ont:Topic ;
+currkg-r:topic.Namespace a currkg:Topic ;
     rdf:value "Namespace"^^xsd:string .
 
-edu-r:topic.URI a edu-ont:Topic ;
+currkg-r:topic.URI a currkg:Topic ;
     rdf:value "URI"^^xsd:string .
 

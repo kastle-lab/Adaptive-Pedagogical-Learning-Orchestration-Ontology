@@ -7,4 +7,4 @@ Each subfolder corresponds to one source CSV and usually contains:
 - `output-<source>-<row>.ttl` for row-level graph fragments.
 - `output-cv-<source>-<index>.ttl` for controlled vocabulary fragments, when present.
 
-Common generated prefixes include `aplo-ont`, `aplo-r`, `edu-ont`, `edu-r`, `rdf`, `xsd`, and sometimes `time`.
+Common generated prefixes include `aplo-ont`, `aplo-r`, `currkg`, `currkg-r`, `rdf`, `xsd`, and sometimes `time`.

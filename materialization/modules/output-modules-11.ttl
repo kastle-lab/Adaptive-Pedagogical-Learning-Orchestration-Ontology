@@ -1,11 +1,11 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-edu-r:module.RDFS a edu-ont:Module ;
+currkg-r:module.RDFS a currkg:Module ;
     rdf:value "RDFS"^^xsd:string ;
     aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.RDFS.RDFS%20Vocabulary%20Inference%20Review ;
     aplo-ont:hasLearningObjective aplo-r:learningObjective.KG%20Resource%20Development%20Practice.Apply%20RDFS%20vocabulary%20reasoning .

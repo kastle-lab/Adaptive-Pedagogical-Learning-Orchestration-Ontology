@@ -1,7 +1,7 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -17,7 +17,7 @@ aplo-r:awarenessObservation.Learner%20Courtney.Axiom.Manchester%20Syntax%20Trans
     aplo-ont:atTime aplo-r:temporalExtent.Learner%20Courtney.Axiom.Manchester%20Syntax%20Translation.Manchester%20Syntax%20Translation%20Revision%20State.2026-02-22T13%3A42%3A00Z%20to%202026-02-22T14%3A07%3A00Z ;
     aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Working%20Awareness ;
     aplo-ont:onSkill aplo-r:skill.Manchester%20Syntax%20Translation ;
-    aplo-ont:onTopic edu-r:topic.Axiom .
+    aplo-ont:onTopic currkg-r:topic.Axiom .
 
 aplo-r:skill.Manchester%20Syntax%20Translation a aplo-ont:Skill ;
     rdf:value "Manchester Syntax Translation"^^xsd:string .
@@ -28,6 +28,6 @@ aplo-r:temporalExtent.Learner%20Courtney.Axiom.Manchester%20Syntax%20Translation
         "ISO 8601 UTC"^^xsd:string,
         "TimeInterval"^^xsd:string .
 
-edu-r:topic.Axiom a edu-ont:Topic ;
+currkg-r:topic.Axiom a currkg:Topic ;
     rdf:value "Axiom"^^xsd:string .
 

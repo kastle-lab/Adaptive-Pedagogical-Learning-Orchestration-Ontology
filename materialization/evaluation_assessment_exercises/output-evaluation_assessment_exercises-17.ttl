@@ -1,26 +1,26 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:evaluationAssessmentExercise.Predicate%20Logic.Predicate%20Translation%20Task a aplo-ont:EvaluationAssessmentExercise ;
     rdf:value "Predicate Logic"^^xsd:string,
         "Predicate Translation Task"^^xsd:string ;
-    aplo-ont:evaluatesTopicAwarenessOf edu-r:topic.Object,
-        edu-r:topic.Predicate,
-        edu-r:topic.Subject ;
+    aplo-ont:evaluatesTopicAwarenessOf currkg-r:topic.Object,
+        currkg-r:topic.Predicate,
+        currkg-r:topic.Subject ;
     aplo-ont:hasWorkloadLevel aplo-r:workloadLevel.Low%20Workload ;
     aplo-ont:usesTechnique aplo-r:evaluationTechnique.Auto%20Scored%20Concept%20Check .
 
-edu-r:topic.Object a edu-ont:Topic ;
+currkg-r:topic.Object a currkg:Topic ;
     rdf:value "Object"^^xsd:string .
 
-edu-r:topic.Predicate a edu-ont:Topic ;
+currkg-r:topic.Predicate a currkg:Topic ;
     rdf:value "Predicate"^^xsd:string .
 
-edu-r:topic.Subject a edu-ont:Topic ;
+currkg-r:topic.Subject a currkg:Topic ;
     rdf:value "Subject"^^xsd:string .
 
 aplo-r:evaluationTechnique.Auto%20Scored%20Concept%20Check a aplo-ont:EvaluationTechnique ;

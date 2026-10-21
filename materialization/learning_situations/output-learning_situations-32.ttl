@@ -1,30 +1,30 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:learningSituation.Data%20Analysis%20KG%20Modeling%20Practice a aplo-ont:LearningSituation ;
     rdf:value "Data Analysis KG Modeling Practice"^^xsd:string ;
-    aplo-ont:requiresTopicKnowledge edu-r:topic.Object,
-        edu-r:topic.Predicate,
-        edu-r:topic.Subject,
-        edu-r:topic.Triple ;
-    aplo-ont:scopes edu-r:persona.Darwin .
+    aplo-ont:requiresTopicKnowledge currkg-r:topic.Object,
+        currkg-r:topic.Predicate,
+        currkg-r:topic.Subject,
+        currkg-r:topic.Triple ;
+    aplo-ont:scopes currkg-r:persona.Darwin .
 
-edu-r:persona.Darwin a edu-ont:Persona ;
+currkg-r:persona.Darwin a currkg:Persona ;
     rdf:value "Darwin"^^xsd:string .
 
-edu-r:topic.Object a edu-ont:Topic ;
+currkg-r:topic.Object a currkg:Topic ;
     rdf:value "Object"^^xsd:string .
 
-edu-r:topic.Predicate a edu-ont:Topic ;
+currkg-r:topic.Predicate a currkg:Topic ;
     rdf:value "Predicate"^^xsd:string .
 
-edu-r:topic.Subject a edu-ont:Topic ;
+currkg-r:topic.Subject a currkg:Topic ;
     rdf:value "Subject"^^xsd:string .
 
-edu-r:topic.Triple a edu-ont:Topic ;
+currkg-r:topic.Triple a currkg:Topic ;
     rdf:value "Triple"^^xsd:string .
 

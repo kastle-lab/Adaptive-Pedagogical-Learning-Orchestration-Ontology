@@ -1,22 +1,22 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:learningSituation.Executive%20KG%20Value%20Review a aplo-ont:LearningSituation ;
     rdf:value "Executive KG Value Review"^^xsd:string ;
-    aplo-ont:requiresTopicKnowledge edu-r:topic.Graph,
-        edu-r:topic.Knowledge%20Graph ;
-    aplo-ont:scopes edu-r:persona.Edward .
+    aplo-ont:requiresTopicKnowledge currkg-r:topic.Graph,
+        currkg-r:topic.Knowledge%20Graph ;
+    aplo-ont:scopes currkg-r:persona.Edward .
 
-edu-r:persona.Edward a edu-ont:Persona ;
+currkg-r:persona.Edward a currkg:Persona ;
     rdf:value "Edward"^^xsd:string .
 
-edu-r:topic.Graph a edu-ont:Topic ;
+currkg-r:topic.Graph a currkg:Topic ;
     rdf:value "Graph"^^xsd:string .
 
-edu-r:topic.Knowledge%20Graph a edu-ont:Topic ;
+currkg-r:topic.Knowledge%20Graph a currkg:Topic ;
     rdf:value "Knowledge Graph"^^xsd:string .
 

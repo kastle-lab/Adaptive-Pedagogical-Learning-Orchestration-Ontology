@@ -1,22 +1,22 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:skill.Logic%20Operator%20Recognition a aplo-ont:Skill ;
     rdf:value "Logic Operator Recognition"^^xsd:string ;
-    aplo-ont:requiresTopic edu-r:topic.Boolean%20Arithmetic,
-        edu-r:topic.Conjunction,
-        edu-r:topic.Disjunction .
+    aplo-ont:requiresTopic currkg-r:topic.Boolean%20Arithmetic,
+        currkg-r:topic.Conjunction,
+        currkg-r:topic.Disjunction .
 
-edu-r:topic.Boolean%20Arithmetic a edu-ont:Topic ;
+currkg-r:topic.Boolean%20Arithmetic a currkg:Topic ;
     rdf:value "Boolean Arithmetic"^^xsd:string .
 
-edu-r:topic.Conjunction a edu-ont:Topic ;
+currkg-r:topic.Conjunction a currkg:Topic ;
     rdf:value "Conjunction"^^xsd:string .
 
-edu-r:topic.Disjunction a edu-ont:Topic ;
+currkg-r:topic.Disjunction a currkg:Topic ;
     rdf:value "Disjunction"^^xsd:string .
 

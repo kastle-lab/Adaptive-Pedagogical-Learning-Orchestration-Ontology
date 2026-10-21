@@ -18,7 +18,7 @@ DEFAULT_PREFIXES = {
     "rdfs": str(RDFS),
     "xsd": str(XSD),
     "aplo-ont": "https://aplo.cs.wright.edu/lod/ontology#",
-    "edu-ont": "https://edugate.cs.wright.edu/lod/ontology#",
+    "currkg": "https://kastle-lab.org/currkg/lod/ontology#",
 }
 
 DATATYPE_PREFIXES = {"xsd", "rdf", "rdfs"}

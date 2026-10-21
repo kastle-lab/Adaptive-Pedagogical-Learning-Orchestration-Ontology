@@ -1,46 +1,46 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:skill.OWL%20Modeling%20Constraint%20Analysis a aplo-ont:Skill ;
     rdf:value "OWL Modeling Constraint Analysis"^^xsd:string ;
-    aplo-ont:requiresTopic edu-r:topic.Annotations,
-        edu-r:topic.Anonymous%20Class,
-        edu-r:topic.Axiom,
-        edu-r:topic.Data%20Properties,
-        edu-r:topic.Datatypes,
-        edu-r:topic.Equivalence,
-        edu-r:topic.OWL,
-        edu-r:topic.OWL2,
-        edu-r:topic.Object%20Properties .
+    aplo-ont:requiresTopic currkg-r:topic.Annotations,
+        currkg-r:topic.Anonymous%20Class,
+        currkg-r:topic.Axiom,
+        currkg-r:topic.Data%20Properties,
+        currkg-r:topic.Datatypes,
+        currkg-r:topic.Equivalence,
+        currkg-r:topic.OWL,
+        currkg-r:topic.OWL2,
+        currkg-r:topic.Object%20Properties .
 
-edu-r:topic.Annotations a edu-ont:Topic ;
+currkg-r:topic.Annotations a currkg:Topic ;
     rdf:value "Annotations"^^xsd:string .
 
-edu-r:topic.Anonymous%20Class a edu-ont:Topic ;
+currkg-r:topic.Anonymous%20Class a currkg:Topic ;
     rdf:value "Anonymous Class"^^xsd:string .
 
-edu-r:topic.Axiom a edu-ont:Topic ;
+currkg-r:topic.Axiom a currkg:Topic ;
     rdf:value "Axiom"^^xsd:string .
 
-edu-r:topic.Data%20Properties a edu-ont:Topic ;
+currkg-r:topic.Data%20Properties a currkg:Topic ;
     rdf:value "Data Properties"^^xsd:string .
 
-edu-r:topic.Datatypes a edu-ont:Topic ;
+currkg-r:topic.Datatypes a currkg:Topic ;
     rdf:value "Datatypes"^^xsd:string .
 
-edu-r:topic.Equivalence a edu-ont:Topic ;
+currkg-r:topic.Equivalence a currkg:Topic ;
     rdf:value "Equivalence"^^xsd:string .
 
-edu-r:topic.OWL a edu-ont:Topic ;
+currkg-r:topic.OWL a currkg:Topic ;
     rdf:value "OWL"^^xsd:string .
 
-edu-r:topic.OWL2 a edu-ont:Topic ;
+currkg-r:topic.OWL2 a currkg:Topic ;
     rdf:value "OWL2"^^xsd:string .
 
-edu-r:topic.Object%20Properties a edu-ont:Topic ;
+currkg-r:topic.Object%20Properties a currkg:Topic ;
     rdf:value "Object Properties"^^xsd:string .
 

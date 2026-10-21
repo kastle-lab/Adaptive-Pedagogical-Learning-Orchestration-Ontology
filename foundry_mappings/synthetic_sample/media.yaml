@@ -3,8 +3,8 @@ metadata:
   source_ext: "csv"
 
 root:
-  type: "edu-ont:Media"
-  uri: "edu-r:media"
+  type: "currkg:Media"
+  uri: "currkg-r:media"
   varids: ["Media"]
   connections:
     - p: "rdf:value"

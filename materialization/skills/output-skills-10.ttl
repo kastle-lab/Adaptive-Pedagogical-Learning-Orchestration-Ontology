@@ -1,22 +1,22 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:skill.Ontology%20Model%20Revision a aplo-ont:Skill ;
     rdf:value "Ontology Model Revision"^^xsd:string ;
-    aplo-ont:requiresTopic edu-r:topic.Axiom,
-        edu-r:topic.Ontology,
-        edu-r:topic.Property .
+    aplo-ont:requiresTopic currkg-r:topic.Axiom,
+        currkg-r:topic.Ontology,
+        currkg-r:topic.Property .
 
-edu-r:topic.Axiom a edu-ont:Topic ;
+currkg-r:topic.Axiom a currkg:Topic ;
     rdf:value "Axiom"^^xsd:string .
 
-edu-r:topic.Ontology a edu-ont:Topic ;
+currkg-r:topic.Ontology a currkg:Topic ;
     rdf:value "Ontology"^^xsd:string .
 
-edu-r:topic.Property a edu-ont:Topic ;
+currkg-r:topic.Property a currkg:Topic ;
     rdf:value "Property"^^xsd:string .
 

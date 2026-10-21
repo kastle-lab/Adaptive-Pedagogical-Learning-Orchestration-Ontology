@@ -1,22 +1,22 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:skill.RDF%20Serialization%20Comparison a aplo-ont:Skill ;
     rdf:value "RDF Serialization Comparison"^^xsd:string ;
-    aplo-ont:requiresTopic edu-r:topic.JSON-LD,
-        edu-r:topic.RDF%2FXML,
-        edu-r:topic.Turtle .
+    aplo-ont:requiresTopic currkg-r:topic.JSON-LD,
+        currkg-r:topic.RDF%2FXML,
+        currkg-r:topic.Turtle .
 
-edu-r:topic.JSON-LD a edu-ont:Topic ;
+currkg-r:topic.JSON-LD a currkg:Topic ;
     rdf:value "JSON-LD"^^xsd:string .
 
-edu-r:topic.RDF%2FXML a edu-ont:Topic ;
+currkg-r:topic.RDF%2FXML a currkg:Topic ;
     rdf:value "RDF/XML"^^xsd:string .
 
-edu-r:topic.Turtle a edu-ont:Topic ;
+currkg-r:topic.Turtle a currkg:Topic ;
     rdf:value "Turtle"^^xsd:string .
 

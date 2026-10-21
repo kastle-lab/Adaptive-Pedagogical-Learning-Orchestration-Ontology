@@ -5,10 +5,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
 @base <https://kastle-lab.org/aplo/lod/ontology#> .
 
 <https://kastle-lab.org/aplo/lod/ontology> rdf:type owl:Ontology ;
@@ -107,7 +107,7 @@ aplo-ont:hasLearningChallenge rdf:type owl:ObjectProperty ;
 ###  https://kastle-lab.org/aplo/lod/ontology#hasLearningObjective
 aplo-ont:hasLearningObjective rdf:type owl:ObjectProperty ;
                             owl:inverseOf aplo-ont:isLearningObjectiveOfModule ;
-                            rdfs:domain edu-ont:Module ;
+                            rdfs:domain currkg:Module ;
                             rdfs:range aplo-ont:LearningObjective ;
                             rdfs:comment "Relates an instructional module to a learning objective included in that module." ;
                             rdfs:label "hasLearningObjective" .
@@ -177,7 +177,7 @@ aplo-ont:isLearningChallengeOf rdf:type owl:ObjectProperty ,
 ###  https://kastle-lab.org/aplo/lod/ontology#isLearningObjectiveOfModule
 aplo-ont:isLearningObjectiveOfModule rdf:type owl:ObjectProperty ;
                                    rdfs:domain aplo-ont:LearningObjective ;
-                                   rdfs:range edu-ont:Module ;
+                                   rdfs:range currkg:Module ;
                                    rdfs:comment "Inverse of hasLearningObjective; relates a learning objective to a module that includes it." ;
                                    rdfs:label "isLearningObjectiveOfModule" .
 
@@ -186,7 +186,7 @@ aplo-ont:isLearningObjectiveOfModule rdf:type owl:ObjectProperty ;
 aplo-ont:isLearningObjectiveSupportedBy rdf:type owl:ObjectProperty ;
                                       owl:inverseOf aplo-ont:supportsLearningObjective ;
                                       rdfs:domain aplo-ont:LearningObjective ;
-                                      rdfs:range edu-ont:Media ;
+                                      rdfs:range currkg:Media ;
                                       rdfs:comment "Inverse of supportsLearningObjective; relates a learning objective to media that supports it." ;
                                       rdfs:label "isLearningObjectiveSupportedBy" .
 
@@ -196,7 +196,7 @@ aplo-ont:isPersonaScopeOf rdf:type owl:ObjectProperty ;
                         owl:inverseOf aplo-ont:scopes ;
                         rdf:type owl:AsymmetricProperty ,
                                  owl:IrreflexiveProperty ;
-                        rdfs:domain edu-ont:Persona ;
+                        rdfs:domain currkg:Persona ;
                         rdfs:range aplo-ont:LearningSituation ;
                         rdfs:comment "Inverse of scopes; relates a persona to learning situations scoped by it." ;
                         rdfs:label "isPersonaScopeOf" .
@@ -207,7 +207,7 @@ aplo-ont:isPriorTopicKnowledgeFor rdf:type owl:ObjectProperty ;
                                 owl:inverseOf aplo-ont:requiresTopicKnowledge ;
                                 rdf:type owl:AsymmetricProperty ,
                                          owl:IrreflexiveProperty ;
-                                rdfs:domain edu-ont:Topic ;
+                                rdfs:domain currkg:Topic ;
                                 rdfs:range aplo-ont:LearningSituation ;
                                 rdfs:comment "Inverse of requiresTopicKnowledge; relates a topic to learning situations requiring prior knowledge of it." ;
                                 rdfs:label "isPriorTopicKnowledgeFor" .
@@ -281,7 +281,7 @@ aplo-ont:isTopicObservedBy rdf:type owl:ObjectProperty ;
                          owl:inverseOf aplo-ont:onTopic ;
                          rdf:type owl:AsymmetricProperty ,
                                   owl:IrreflexiveProperty ;
-                         rdfs:domain edu-ont:Topic ;
+                         rdfs:domain currkg:Topic ;
                          rdfs:range aplo-ont:AwarenessObservation ;
                          rdfs:comment "Inverse of onTopic; relates a topic to awareness observations about that topic." ;
                          rdfs:label "isTopicObservedBy" .
@@ -292,7 +292,7 @@ aplo-ont:isTopicRequiredBy rdf:type owl:ObjectProperty ;
                          owl:inverseOf aplo-ont:requiresTopic ;
                          rdf:type owl:AsymmetricProperty ,
                                   owl:IrreflexiveProperty ;
-                         rdfs:domain edu-ont:Topic ;
+                         rdfs:domain currkg:Topic ;
                          rdfs:range aplo-ont:Skill ;
                          rdfs:comment "Inverse of requiresTopic; relates a topic to skills that require it." ;
                          rdfs:label "isTopicRequiredBy" .
@@ -313,7 +313,7 @@ aplo-ont:onTopic rdf:type owl:ObjectProperty ,
                         owl:AsymmetricProperty ,
                         owl:IrreflexiveProperty ;
                rdfs:domain aplo-ont:AwarenessObservation ;
-               rdfs:range edu-ont:Topic ;
+               rdfs:range currkg:Topic ;
                rdfs:comment "Relates an awareness observation to the topic that the observation is about." ;
                rdfs:label "onTopic" .
 
@@ -323,7 +323,7 @@ aplo-ont:requiresTopicKnowledge rdf:type owl:ObjectProperty ,
                                             owl:AsymmetricProperty ,
                                             owl:IrreflexiveProperty ;
                                    rdfs:domain aplo-ont:LearningSituation ;
-                                   rdfs:range edu-ont:Topic ;
+                                   rdfs:range currkg:Topic ;
                                    rdfs:comment "Relates a learning situation to a topic that should be known beforehand." ;
                                    rdfs:label "requiresTopicKnowledge" .
 
@@ -333,7 +333,7 @@ aplo-ont:requiresTopic rdf:type owl:ObjectProperty ,
                               owl:AsymmetricProperty ,
                               owl:IrreflexiveProperty ;
                      rdfs:domain aplo-ont:Skill ;
-                     rdfs:range edu-ont:Topic ;
+                     rdfs:range currkg:Topic ;
                      rdfs:comment "Relates a skill to a topic required for developing or applying that skill." ;
                      rdfs:label "requiresTopic" .
 
@@ -343,14 +343,14 @@ aplo-ont:scopes rdf:type owl:ObjectProperty ,
                        owl:AsymmetricProperty ,
                        owl:IrreflexiveProperty ;
               rdfs:domain aplo-ont:LearningSituation ;
-              rdfs:range edu-ont:Persona ;
+              rdfs:range currkg:Persona ;
               rdfs:comment "Relates a learning situation to a persona that scopes or contextualizes it." ;
               rdfs:label "scopes" .
 
 
 ###  https://kastle-lab.org/aplo/lod/ontology#supportsLearningObjective
 aplo-ont:supportsLearningObjective rdf:type owl:ObjectProperty ;
-                                 rdfs:domain edu-ont:Media ;
+                                 rdfs:domain currkg:Media ;
                                  rdfs:range aplo-ont:LearningObjective ;
                                  rdfs:comment "Relates a media resource to a learning objective supported by that resource." ;
                                  rdfs:label "supportsLearningObjective" .
@@ -380,26 +380,26 @@ aplo-ont:worksOnSituation rdf:type owl:ObjectProperty ,
 #    Classes
 #################################################################
 
-###  https://edugate.cs.wright.edu/lod/ontology#Media
-edu-ont:Media rdf:type owl:Class ;
+###  https://kastle-lab.org/currkg/lod/ontology#Media
+currkg:Media rdf:type owl:Class ;
               rdfs:comment "Represents a learning media resource that can support one or more learning objectives." ;
               rdfs:label "Media" .
 
 
-###  https://edugate.cs.wright.edu/lod/ontology#Module
-edu-ont:Module rdf:type owl:Class ;
+###  https://kastle-lab.org/currkg/lod/ontology#Module
+currkg:Module rdf:type owl:Class ;
                rdfs:comment "Represents an instructional module that can include one or more learning objectives." ;
                rdfs:label "Module" .
 
 
-###  https://edugate.cs.wright.edu/lod/ontology#Persona
-edu-ont:Persona rdf:type owl:Class ;
+###  https://kastle-lab.org/currkg/lod/ontology#Persona
+currkg:Persona rdf:type owl:Class ;
                 rdfs:comment "Represents a learner persona used to scope or contextualize a learning situation." ;
                 rdfs:label "Persona" .
 
 
-###  https://edugate.cs.wright.edu/lod/ontology#Topic
-edu-ont:Topic rdf:type owl:Class ;
+###  https://kastle-lab.org/currkg/lod/ontology#Topic
+currkg:Topic rdf:type owl:Class ;
               owl:disjointWith aplo-ont:Agent ,
                                aplo-ont:AwarenessObservation ,
                                aplo-ont:LearnerGoal ,
@@ -458,7 +458,7 @@ aplo-ont:AwarenessObservation rdf:type owl:Class ;
                                             [ rdf:type owl:Restriction ;
                                               owl:onProperty aplo-ont:onTopic ;
                                               owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                              owl:onClass edu-ont:Topic
+                                              owl:onClass currkg:Topic
                                             ] ,
                                             [ rdf:type owl:Restriction ;
                                               owl:onProperty aplo-ont:atTime ;
@@ -555,12 +555,12 @@ aplo-ont:LearningSituation rdf:type owl:Class ;
                          rdfs:subClassOf [ rdf:type owl:Restriction ;
                                            owl:onProperty aplo-ont:requiresTopicKnowledge ;
                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                           owl:onClass edu-ont:Topic
+                                           owl:onClass currkg:Topic
                                          ] ,
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty aplo-ont:scopes ;
                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                           owl:onClass edu-ont:Persona
+                                           owl:onClass currkg:Persona
                                          ] ;
                          rdfs:comment "Represents the ability to capture the current state or situation of a learner (e.g. learner context, prior knowledge, etc.)." ;
                          rdfs:label "LearningSituation" .
@@ -570,7 +570,7 @@ aplo-ont:LearningSituation rdf:type owl:Class ;
 aplo-ont:Skill rdf:type owl:Class ;
              rdfs:subClassOf [ rdf:type owl:Restriction ;
                                owl:onProperty aplo-ont:requiresTopic ;
-                               owl:someValuesFrom edu-ont:Topic
+                               owl:someValuesFrom currkg:Topic
                              ] ;
              rdfs:comment "Represents a lightweight bridge concept connecting learner goals, learning objectives, topics, and future alignment across external skill or labor market ontologies." ;
              rdfs:label "Skill" .

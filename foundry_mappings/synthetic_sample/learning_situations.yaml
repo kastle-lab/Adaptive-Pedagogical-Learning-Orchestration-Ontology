@@ -13,8 +13,8 @@ root:
         val_source: "Learning Situation"
     - p: "aplo-ont:scopes"
       o:
-        type: "edu-ont:Persona"
-        uri: "edu-r:persona"
+        type: "currkg:Persona"
+        uri: "currkg-r:persona"
         varids: ["Scopes Persona"]
         connections:
           - p: "rdf:value"
@@ -23,8 +23,8 @@ root:
               val_source: "Scopes Persona"
     - p: "aplo-ont:requiresTopicKnowledge"
       o:
-        type: "edu-ont:Topic"
-        uri: "edu-r:topic"
+        type: "currkg:Topic"
+        uri: "currkg-r:topic"
         varids: ["Requires Prior Topic Knowledge"]
         split: " | "
         connections:

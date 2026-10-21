@@ -13,8 +13,8 @@ root:
         val_source: "Skill"
     - p: "aplo-ont:requiresTopic"
       o:
-        type: "edu-ont:Topic"
-        uri: "edu-r:topic"
+        type: "currkg:Topic"
+        uri: "currkg-r:topic"
         varids: ["Requires Topics"]
         split: " | "
         connections:

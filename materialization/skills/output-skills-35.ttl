@@ -1,18 +1,18 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:skill.Schema.org%20Vocabulary%20Alignment a aplo-ont:Skill ;
     rdf:value "Schema.org Vocabulary Alignment"^^xsd:string ;
-    aplo-ont:requiresTopic edu-r:topic.domainIncludes,
-        edu-r:topic.rangeIncludes .
+    aplo-ont:requiresTopic currkg-r:topic.domainIncludes,
+        currkg-r:topic.rangeIncludes .
 
-edu-r:topic.domainIncludes a edu-ont:Topic ;
+currkg-r:topic.domainIncludes a currkg:Topic ;
     rdf:value "domainIncludes"^^xsd:string .
 
-edu-r:topic.rangeIncludes a edu-ont:Topic ;
+currkg-r:topic.rangeIncludes a currkg:Topic ;
     rdf:value "rangeIncludes"^^xsd:string .
 

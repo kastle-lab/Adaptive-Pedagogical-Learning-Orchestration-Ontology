@@ -1,11 +1,11 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-edu-r:media.Survey%20of%20Visualization%20Tools a edu-ont:Media ;
+currkg-r:media.Survey%20of%20Visualization%20Tools a currkg:Media ;
     rdf:value "Survey of Visualization Tools"^^xsd:string ;
     aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.Survey%20of%20Visualization%20Tools.Visualization%20Tool%20Selection%20Brief ;
     aplo-ont:supportsLearningObjective aplo-r:learningObjective.User%20Engagement%20KG%20Demonstration%20Planning.Select%20KG%20visualization%20tools .

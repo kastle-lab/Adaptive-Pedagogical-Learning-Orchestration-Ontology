@@ -1,11 +1,11 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-edu-r:media.History%20of%20the%20Semantic%20Web a edu-ont:Media ;
+currkg-r:media.History%20of%20the%20Semantic%20Web a currkg:Media ;
     rdf:value "History of the Semantic Web"^^xsd:string ;
     aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.History%20of%20the%20Semantic%20Web.Semantic%20Web%20Timeline%20Explanation ;
     aplo-ont:supportsLearningObjective aplo-r:learningObjective.Supply%20Chain%20KG%20Use%20Case%20Review.Explain%20Semantic%20Web%20evolution .

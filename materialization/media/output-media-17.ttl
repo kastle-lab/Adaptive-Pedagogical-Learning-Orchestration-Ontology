@@ -1,11 +1,11 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-edu-r:media.OWL a edu-ont:Media ;
+currkg-r:media.OWL a currkg:Media ;
     rdf:value "OWL"^^xsd:string ;
     aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.OWL.RDF%20RDFS%20Mastery%20Reassessment ;
     aplo-ont:supportsLearningObjective aplo-r:learningObjective.RDFS%20Schema%20Practice.Demonstrate%20mastery%20of%20RDF%20and%20RDFS%20basics .

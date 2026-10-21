@@ -1,18 +1,18 @@
 @prefix aplo-ont: <https://kastle-lab.org/aplo/lod/ontology#> .
 @prefix aplo-r: <https://kastle-lab.org/aplo/lod/resource#> .
-@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix currkg: <https://kastle-lab.org/currkg/lod/ontology#> .
+@prefix currkg-r: <https://kastle-lab.org/currkg/lod/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aplo-r:evaluationAssessmentExercise.Introduction%20to%20Knowledge%20Engineering.Knowledge%20Engineering%20Workflow%20Plan a aplo-ont:EvaluationAssessmentExercise ;
     rdf:value "Introduction to Knowledge Engineering"^^xsd:string,
         "Knowledge Engineering Workflow Plan"^^xsd:string ;
-    aplo-ont:evaluatesTopicAwarenessOf edu-r:topic.Knowledge%20Graph ;
+    aplo-ont:evaluatesTopicAwarenessOf currkg-r:topic.Knowledge%20Graph ;
     aplo-ont:hasWorkloadLevel aplo-r:workloadLevel.Moderate%20Workload ;
     aplo-ont:usesTechnique aplo-r:evaluationTechnique.Short%20Explanation%20Rubric .
 
-edu-r:topic.Knowledge%20Graph a edu-ont:Topic ;
+currkg-r:topic.Knowledge%20Graph a currkg:Topic ;
     rdf:value "Knowledge Graph"^^xsd:string .
 
 aplo-r:evaluationTechnique.Short%20Explanation%20Rubric a aplo-ont:EvaluationTechnique ;
