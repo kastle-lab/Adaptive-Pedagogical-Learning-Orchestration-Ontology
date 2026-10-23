@@ -85,8 +85,8 @@ $(function(){
 <img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" style="border-width:0" alt="License" />
 </a>
 <br/></dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
-<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Jaldi, Chris Davis, and Cogan Shimizu (2026). APLO: A Modular Adaptive Pedagogical Learning Orchestration Ontology for Neurosymbolic Educational Systems. WOP'26 (17th Workshop on Ontology Design and Patterns), manuscript.</dd>
+<dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd><dt>Cite as:</dt>
+<dd>Jaldi, Chris Davis, and Cogan Shimizu (2026). APLO: A Modular Adaptive Pedagogical Learning Orchestration Ontology for Neurosymbolic Educational Systems. Proceedings of the 17th Workshop on Ontology Design and Patterns (WOP) 2026, co-located with the 25th International Semantic Web Conference (ISWC) 2026, Bari, Italy, October 25-29, 2026.</dd>
 <dt>Vocabulary maintained at:</dt>
 <dd><a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology">https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology</a></dd>
 </dl>
@@ -97,61 +97,88 @@ $(function(){
 <div>
 <span>Ontology Specification</span>
 </div>
-</div>     <div id="abstract"><p>The <strong>Adaptive Pedagogical Learning Orchestration (APLO) Ontology</strong> is a modular RDF/OWL vocabulary for representing dependencies among pedagogical structure, learning objectives, learner context, assessment evidence, feedback, and temporally situated learner-awareness observations in adaptive educational systems.</p>
+</div>     <div id="abstract"><p>The <strong>Adaptive Pedagogical Learning Orchestration (APLO) Ontology</strong> is a modular RDF/OWL vocabulary for representing dependencies among pedagogical structure, learning objectives, learner context, assessment evidence, feedback, and temporally situated learner-awareness observations in adaptive educational systems. Named after the Greek word <em>απλό</em> (<em>aplo</em>), meaning “simple,” APLO is intended as a simple symbolic orchestration interface for these concerns.</p>
 <p>APLO does not define a tutoring algorithm or adaptation policy. Instead, it provides the semantic structures required to relate instructional configurations to learner situations and evaluation evidence. The ontology comprises four interoperable modules and has been subjected to structural checks, synthetic-data materialization, and competency-question validation; these checks assess representational coverage rather than educational efficacy.</p>
 </div>
 <div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
-    <div id="introduction"><section aria-labelledby="aplo-intro">
-  <h2 id="aplo-intro">Purpose and scope</h2>
-  <p>APLO extends curriculum-centered knowledge representation with a <em>process-aware</em> representation of adaptive instruction. Curriculum resources and skill structures alone do not express instructional ordering, the relationship between an evaluation result and a learning objective, response provenance, or changes in learner awareness. APLO provides explicit RDF/OWL relations for representing those dependencies.</p>
-  <p>APLO was developed through a competency-question-driven application of Modular Ontology Modeling (MOMo) and reusable ontology design patterns. Its intended application context includes neurosymbolic educational agents; however, APLO neither implements an agent nor entails a recommendation for the next instructional action.</p>
-  <p>The stable term namespace is <code>https://kastle-lab.org/aplo/lod/ontology#</code>, conventionally abbreviated <code>aplo-ont:</code>. The ontology IRI (without the hash) is <code>https://kastle-lab.org/aplo/lod/ontology</code>. Learning resources and curriculum-facing concepts may be represented using distinct external vocabulary terms.</p>
-  <p>See the <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology" rel="noopener noreferrer">APLO repository</a> for the authoritative OWL source, schema visualizations, competency questions, mappings, and synthetic validation material.</p>
-</section>
+<div id="introduction">
+   <h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+   <section aria-labelledby="aplo-intro">
+      <h2 id="aplo-intro">Purpose and scope</h2>
+      <p>APLO extends curriculum-centered knowledge representation with a <em>process-aware</em> representation of adaptive instruction. Curriculum resources and skill structures alone do not express instructional ordering, the relationship between an evaluation result and a learning objective, response provenance, or changes in learner awareness. APLO provides explicit RDF/OWL relations for representing those dependencies without treating them as separate data silos.</p>
+      <p>APLO was developed through a competency-question-driven application of Modular Ontology Modeling (MOMo) and reusable ontology design patterns, including patterns for part-whole structure, sequence, descriptions and situations, observations, provenance, quantities, taxonomy alignment, and agent roles. Its intended application context includes neurosymbolic educational agents; however, APLO neither implements an agent nor entails a recommendation for the next instructional action.</p>
+      <p>The stable term namespace is <code>https://kastle-lab.org/aplo/lod/ontology#</code>, conventionally abbreviated <code>aplo-ont:</code>. The ontology IRI (without the hash) is <code>https://kastle-lab.org/aplo/lod/ontology</code>. Learning resources and curriculum-facing concepts may be represented using distinct external vocabulary terms.</p>
+      <p>See the <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology" rel="noopener noreferrer">APLO repository</a> for the authoritative OWL source, schema visualizations, competency questions, mappings, and synthetic validation material.</p>
+   </section>
+
+   <div>
+      <div id="namespacedeclarations">
+         <h3 id="ns" class="list">Namespace declarations</h3>
+         <div class="namespace-table">
+         <table>
+            <caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+            <tbody>
+               <tr><td><b>aplo-ont</b></td><td>&lt;https://kastle-lab.org/aplo/lod/ontology#&gt;</td></tr>
+               <tr><td><b>aplo-r</b></td><td>&lt;https://kastle-lab.org/aplo/lod/resource#&gt;</td></tr>
+               <tr><td><b>currkg</b></td><td>&lt;https://kastle-lab.org/currkg/lod/ontology#&gt;</td></tr>
+               <tr><td><b>dcterms</b></td><td>&lt;http://purl.org/dc/terms/&gt;</td></tr>
+               <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+               <tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
+               <tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+               <tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+               <tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
 </div>
   
 
 <!--OVERVIEW SECTION-->
-    <div id="overview"><section aria-labelledby="aplo-overview">
-  <h2 id="aplo-overview">Modular overview and navigation</h2>
-  <p>The four modules connect through interface notions such as <code>LearningObjective</code>, <code>LearningSituation</code>, <code>PedagogicalTechnique</code>, <code>AwarenessObservation</code>, <code>Topic</code>, and <code>Skill</code>. The aggregate ontology is represented in the repository as the <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/blob/master/schema/full-schema.owl">full-schema OWL file</a>.</p>
-  <table>
-    <caption>APLO's four ontology modules</caption>
-    <thead><tr><th scope="col">Module</th><th scope="col">Representative notions</th><th scope="col">Main question</th></tr></thead>
-    <tbody>
-      <tr><th scope="row">Pedagogical framework</th><td>PedagogicalFramework, PedagogicalElement, PedagogicalTechnique</td><td>How are instructional elements organized and ordered?</td></tr>
-      <tr><th scope="row">Learning objective</th><td>LearningObjective, LearningStrategy, LearningSituation</td><td>What learner outcomes and situations are being addressed?</td></tr>
-      <tr><th scope="row">Learner evaluation</th><td>EvaluationAssessmentExercise, EvaluationTechnique, EvaluationResult, LearningFeedback, Response</td><td>What was evaluated, observed and communicated, and by whom?</td></tr>
-      <tr><th scope="row">Learner model</th><td>Learner, LearnerGoal, LearningChallenge, AwarenessObservation, AwarenessLevel</td><td>What is known about the learner and how does awareness change?</td></tr>
-    </tbody>
-  </table>
-  <p>Explore the <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/blob/master/schema/full-schema.pdf">full schema diagram (PDF)</a>, <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/blob/master/schema/full-schema-abridged.pdf">abridged schema (PDF)</a>, <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/blob/master/documentation/competency-questions.md">competency question inventory</a>, and <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/tree/master/axioms">axiom rationale</a>.</p>
-  <p><strong>Namespace conventions:</strong> <code>aplo-ont:</code> = <code>https://kastle-lab.org/aplo/lod/ontology#</code>; <code>aplo-r:</code> = <code>https://kastle-lab.org/aplo/lod/resource#</code> (used for instance resources, not the ontology vocabulary).</p>
-</section>
+<div id="overview">
+   <h2 id="overv" class="list">APLO: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+   <section aria-labelledby="aplo-overview">
+      <h2 id="aplo-overview">Modular overview and navigation</h2>
+      <p>The four modules connect through interface notions such as <code>LearningObjective</code>, <code>LearningSituation</code>, <code>PedagogicalTechnique</code>, <code>AwarenessObservation</code>, <code>Topic</code>, and <code>Skill</code>. The aggregate ontology is represented in the repository as the <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/blob/master/schema/full-schema.owl">full-schema OWL file</a>.</p>
+      <table>
+         <caption>APLO's four ontology modules</caption>
+         <thead><tr><th scope="col">Module</th><th scope="col">Representative notions</th><th scope="col">Main question</th></tr></thead>
+         <tbody>
+            <tr><th scope="row">Pedagogical framework</th><td>PedagogicalFramework, PedagogicalElement, PedagogicalTechnique</td><td>How are instructional elements organized and ordered?</td></tr>
+            <tr><th scope="row">Learning objective</th><td>LearningObjective, LearningStrategy, LearningSituation</td><td>What learner outcomes and situations are being addressed?</td></tr>
+            <tr><th scope="row">Learner evaluation</th><td>EvaluationAssessmentExercise, EvaluationTechnique, EvaluationResult, LearningFeedback, Response</td><td>What was evaluated, observed and communicated, and by whom?</td></tr>
+            <tr><th scope="row">Learner model</th><td>Learner, LearnerGoal, LearningChallenge, AwarenessObservation, AwarenessLevel</td><td>What is known about the learner and how does awareness change?</td></tr>
+         </tbody>
+      </table>
+      <p>Explore the <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/blob/master/documentation/key-notions.md">key notions</a>, <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/blob/master/schema/full-schema.pdf">full schema diagram (PDF)</a>, <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/blob/master/schema/full-schema-abridged.pdf">abridged schema (PDF)</a>, <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/blob/master/documentation/competency-questions.md">competency question inventory</a>, <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/blob/master/documentation/cq-sparql.md">SPARQL queries and sample results</a>, and <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/tree/master/axioms">axiom rationale</a>.</p>
+      <p><strong>Namespace conventions:</strong> <code>aplo-ont:</code> = <code>https://kastle-lab.org/aplo/lod/ontology#</code>; <code>aplo-r:</code> = <code>https://kastle-lab.org/aplo/lod/resource#</code> (used for instance resources, not the ontology vocabulary).</p>
+   </section>      
 </div>
   
 
 <!--DESCRIPTION SECTION-->
-    <div id="description"><section aria-labelledby="aplo-design">
-  <h2 id="aplo-design">Ontology design</h2>
-  <p>APLO is organized into four modules: pedagogical framework, learning objective, learner evaluation, and learner model. Each module models one concern of adaptive learning; shared terms connect the modules without introducing a single, overly broad orchestration class.</p>
-  <h3>Pedagogical technique and framework</h3>
-  <p>This module describes how instruction is organized. A pedagogical framework contains pedagogical elements, which can be ordered when sequence matters. Pedagogical techniques are the methods used in instruction, while pedagogical objectives describe their intended effects, such as recall, engagement, or knowledge transfer.</p>
-  <h3>Learning objective</h3>
-  <p>This module connects an intended learner outcome to the instructional context. A learning strategy combines learning objectives with pedagogical techniques. Learning objectives can also be related to learner situations and curriculum-facing resources, linking what is to be learned with how and when it is taught.</p>
-  <h3>Learner evaluation</h3>
-  <p>This module records how learning is assessed and what follows from an assessment. An assessment exercise uses an evaluation technique and metric to produce a result. Feedback and other responses can be linked to their source and time, making the origin and interpretation of evaluation evidence explicit.</p>
-  <h3>Learner model</h3>
-  <p>This module represents learner-specific context: goals, preferences, challenges, situations, and skills. It records awareness as an observation about a topic or skill, with an assigned level and optional time reference. Multiple observations can therefore represent changes in awareness over time.</p>
-  <h3>Reuse, alignment, and imports</h3>
-  <p>APLO references curriculum-facing concepts from CurrKG and is conceptually aligned with learner-profile ontologies such as EduCOR. The aggregate OWL file uses external <code>edu-ont:</code> identifiers for some curriculum-facing classes. These references are not, by themselves, <code>owl:imports</code> or <code>owl:equivalentClass</code> axioms.</p>
-  <h3>Evaluation and limitations</h3>
-  <p>Validation included iterative OOPS! structural checking, 22 synthetic input files, Foundry materialization of 6,836 RDF triples, and query validation of 94 competency questions in Apache Jena Fuseki. All competency questions were supported by the synthetic test data. These artifact-level checks assess representational fitness; they do not establish improved learning outcomes, and APLO does not encode a policy for selecting the next pedagogical action.</p>
-  <h3>Licensing note</h3>
-  <p>APLO is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
-</section>
+<div id="description">
+   <h2 id="desc" class="list">APLO: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+   <section aria-labelledby="aplo-design">
+      <h2 id="aplo-design">Ontology design</h2>
+      <p>APLO is organized into four modules: pedagogical framework, learning objective, learner evaluation, and learner model. Each module models one concern of adaptive learning; shared terms connect the modules without introducing a single, overly broad orchestration class.</p>
+      <h3>Pedagogical technique and framework</h3>
+      <p>This module describes how instruction is organized. A pedagogical framework contains pedagogical elements, which can be ordered when sequence matters. Pedagogical techniques are the methods used in instruction, while pedagogical objectives describe their intended effects, such as recall, engagement, or knowledge transfer.</p>
+      <h3>Learning objective</h3>
+      <p>This module connects an intended learner outcome to the instructional context. A learning strategy combines learning objectives with pedagogical techniques. Learning objectives can also be related to learner situations and curriculum-facing resources, linking what is to be learned with how and when it is taught.</p>
+      <h3>Learner evaluation</h3>
+      <p>This module records how learning is assessed and what follows from an assessment. An assessment exercise uses an evaluation technique and metric to produce a result. APLO distinguishes learning feedback—an observation about a learner’s performance or understanding—from a response, the message or system output delivered to the learner. Feedback and responses can be linked to their source and time, making the origin and interpretation of evaluation evidence explicit.</p>
+      <h3>Learner model</h3>
+      <p>This module represents learner-specific context: goals, preferences, challenges, situations, and skills. Preferences express how instruction, resources, feedback, or delivery may be personalized; challenges express barriers or support needs; and accessibility challenges specialize those needs for accommodations such as captions, screen-reader compatibility, alternative media, or extended time. The module records awareness as an observation about a topic or skill, with an assigned level and optional time reference. Multiple observations can therefore represent changes in awareness over time.</p>
+      <h3>Reuse, alignment, and imports</h3>
+      <p>APLO references curriculum-facing concepts from CurrKG and is conceptually aligned with learner-profile ontologies such as EduCOR. The aggregate OWL file uses external <code>edu-ont:</code> identifiers for some curriculum-facing classes. The <code>Skill</code> notion provides a lightweight bridge among learner goals, learning objectives, topics, and potential future alignment with external skills or labor-market vocabularies. These references are not, by themselves, <code>owl:imports</code> or <code>owl:equivalentClass</code> axioms.</p>
+      <h3>Evaluation and limitations</h3>
+      <p>Validation included iterative OOPS! structural checking, 22 synthetic input files, Foundry materialization of 6,836 RDF triples, and query validation of 94 competency questions in Apache Jena Fuseki. All competency questions were supported by the synthetic test data. These artifact-level checks assess representational fitness; they do not establish improved learning outcomes, and APLO does not encode a policy for selecting the next pedagogical action.</p>
+      <h3>Licensing note</h3>
+      <p>APLO is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+   </section>
 </div>
    
 
@@ -3647,23 +3674,24 @@ This section provides details for each class and property defined by APLO.
     
 
 <!--REFERENCES SECTION-->
-  <div id="references"><section aria-labelledby="aplo-references">
-  <h2 id="aplo-references">References, documentation, and supporting resources</h2>
-  <p><strong>Canonical artifacts:</strong> The <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology">APLO source repository</a> provides the maintained ontology files, schema visualizations, competency questions, mappings, and validation materials.</p>
-  <p><strong>Authors:</strong> <a href="https://orcid.org/0009-0000-2287-1198">Chris Davis Jaldi (ORCID)</a> and <a href="https://orcid.org/0000-0003-4283-8701">Cogan Shimizu (ORCID)</a>, Wright State University.</p>
-  <h3>References</h3>
-  <ol>
-    <li>Shimizu, C., Hammar, K., and Hitzler, P. (2023). <em>Modular Ontology Modeling</em>. <em>Semantic Web</em> 14:459–489. <a href="https://doi.org/10.3233/SW-222886">DOI</a>.</li>
-    <li>Jaldi, C.D., and Shimizu, C. (2025). <em>Education in the era of Neurosymbolic AI</em>. <em>Journal of Web Semantics</em> <a href="https://doi.org/10.1016/j.websem.2024.100857">DOI</a>.</li>
-    <li>Christou, A., Jaldi, C. D., Zalewski, J., McGinty, H. K., Hitzler, P., and Shimizu, C. (2025). <em>An Ontology for Representing Curriculum and Learning Material</em>. <a href="https://arxiv.org/abs/2506.05751">arXiv:2506.05751</a>.</li>
-    <li>Ilkou, E., Abu-Rasheed, H., Tavakoli, M., Hakimov, S., Kismihók, G., Auer, S., and Nejdl, W. (2021). <em>EduCOR: An Educational and Career-Oriented Recommendation Ontology</em>. ISWC 2021, 546–562.</li>
-    <li>Ilkou, E., <em>Personal knowledge graphs: Use cases in e-learning platforms</em> in: Companion Proceedings of the Web Conference 2022, WWW ’22, Association for Computing Machinery doi:10.1145/3487553.3524196.</li>
-    <li>Garijo, D., and Poveda-Villalón, M. <a href="https://dgarijo.github.io/Widoco/doc/bestPractices/index-en.html"><em>A Checklist for Complete Vocabulary Metadata</em></a>. Version 1.0.2, 2023.</li>
-  </ol>
-  <h3>Reproducibility and supplemental material</h3>
-  <p>Reproducibility materials include <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/tree/master/synthetic_data">synthetic input data</a>, <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/tree/master/foundry_mappings">Foundry mappings</a>, <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/tree/master/materialization">materialized RDF</a>, and <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/tree/master/documentation">design notes and competency questions</a>.</p>
-  <p><strong>Funding acknowledgment:</strong> NSF awards 2537485, 2333532 and 2514820, and U.S. Department of Education award P116J250669.</p>
-</section>
+<div id="references">
+   <section aria-labelledby="aplo-references">
+      <h2 id="aplo-references">References, documentation, and supporting resources</h2>
+      <p><strong>Canonical artifacts:</strong> The <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology">APLO source repository</a> provides the maintained ontology files, schema visualizations, competency questions, mappings, and validation materials.</p>
+      <p><strong>Authors:</strong> <a href="https://orcid.org/0009-0000-2287-1198">Chris Davis Jaldi (ORCID)</a> and <a href="https://orcid.org/0000-0003-4283-8701">Cogan Shimizu (ORCID)</a>, Wright State University.</p>
+      <h3 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h3>
+      <ol>
+         <li>Shimizu, C., Hammar, K., and Hitzler, P. (2023). <em>Modular Ontology Modeling</em>. <em>Semantic Web</em> 14:459–489. <a href="https://doi.org/10.3233/SW-222886">DOI</a>.</li>
+         <li>Jaldi, C.D., and Shimizu, C. (2025). <em>Education in the era of Neurosymbolic AI</em>. <em>Journal of Web Semantics</em> <a href="https://doi.org/10.1016/j.websem.2024.100857">DOI</a>.</li>
+         <li>Christou, A., Jaldi, C. D., Zalewski, J., McGinty, H. K., Hitzler, P., and Shimizu, C. (2025). <em>An Ontology for Representing Curriculum and Learning Material</em>. <a href="https://arxiv.org/abs/2506.05751">arXiv:2506.05751</a>.</li>
+         <li>Ilkou, E., Abu-Rasheed, H., Tavakoli, M., Hakimov, S., Kismihók, G., Auer, S., and Nejdl, W. (2021). <em>EduCOR: An Educational and Career-Oriented Recommendation Ontology</em>. ISWC 2021, 546–562.</li>
+         <li>Ilkou, E., <em>Personal knowledge graphs: Use cases in e-learning platforms</em> in: Companion Proceedings of the Web Conference 2022, WWW ’22, Association for Computing Machinery doi:10.1145/3487553.3524196.</li>
+         <li>Garijo, D., and Poveda-Villalón, M. <a href="https://dgarijo.github.io/Widoco/doc/bestPractices/index-en.html"><em>A Checklist for Complete Vocabulary Metadata</em></a>. Version 1.0.2, 2023.</li>
+      </ol>
+      <h3>Reproducibility and supplemental material</h3>
+      <p>Reproducibility materials include <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/tree/master/synthetic_data">synthetic input data</a>, <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/tree/master/foundry_mappings">Foundry mappings</a>, <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/tree/master/materialization">materialized RDF</a>, <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/blob/master/documentation/cq-sparql.md">SPARQL queries and sample results</a>, <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/tree/master/axioms">axiom rationale and generation tooling</a>, and <a href="https://github.com/kastle-lab/Adaptive-Pedagogical-Learning-Orchestration-Ontology/tree/master/documentation">design notes and competency questions</a>.</p>
+      <p><strong>Funding acknowledgment:</strong> NSF awards 2537485, 2333532 and 2514820, and U.S. Department of Education award P116J250669.</p>
+   </section>
 </div>
 <div id="acknowledgments">
 <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

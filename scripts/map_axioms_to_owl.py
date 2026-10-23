@@ -12,12 +12,12 @@ from rdflib.namespace import OWL, RDF, RDFS, XSD
 
 
 DEFAULT_PREFIXES = {
-    "": "https://aplo.cs.wright.edu/lod/ontology#",
+    "": "https://kastle-lab.org/aplo/lod/ontology#",
     "owl": str(OWL),
     "rdf": str(RDF),
     "rdfs": str(RDFS),
     "xsd": str(XSD),
-    "aplo-ont": "https://aplo.cs.wright.edu/lod/ontology#",
+    "aplo-ont": "https://kastle-lab.org/aplo/lod/ontology#",
     "currkg": "https://kastle-lab.org/currkg/lod/ontology#",
 }
 

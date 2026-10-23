@@ -12,7 +12,7 @@
 @base <https://kastle-lab.org/aplo/lod/ontology#> .
 
 <https://kastle-lab.org/aplo/lod/ontology> rdf:type owl:Ontology ;
-                                                          dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                          dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
                                                           rdfs:comment "Ontology pattern for representing learner state, goals, preferences, challenges, awareness observations, skills, topics, and learning situations" .
 
 #################################################################

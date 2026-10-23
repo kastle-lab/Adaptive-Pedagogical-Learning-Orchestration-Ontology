@@ -25,8 +25,8 @@ This repository contains the ontology artifacts for the APLO ontology: schema, d
 ## Namespaces
 | Prefix | Namespace |
 | --- | --- |
-| `aplo-ont` | `https://aplo.cs.wright.edu/lod/ontology#` |
-| `aplo-r` | `https://aplo.cs.wright.edu/lod/resource#` |
+| `aplo-ont` | `https://kastle-lab.org/aplo/lod/ontology#` |
+| `aplo-r` | `https://kastle-lab.org/aplo/lod/resource#` |
 
 ## Tooling
 [Kastle Foundry](https://github.com/kastle-lab/foundry) was used to materialize RDF/Turtle graph fragments from the synthetic CSV data and YAML mappings.

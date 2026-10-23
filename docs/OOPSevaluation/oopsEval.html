@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>APLO Ontology — OOPS! Evaluation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Evaluation of the APLO ontology with the OOPS! tool.">
+    <meta name="language" content="English">
+
+    <script src="evaluation/js/jquery-1.11.0.js"></script>
+    <script src="evaluation/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="evaluation/themes/blue/style.css" type="text/css" media="print, projection, screen">
+    <link rel="stylesheet" href="evaluation/css/bootstrap.css">
+    <link rel="stylesheet" href="evaluation/oops-evaluation.css">
+    <script src="evaluation/js/jquery.tablesorter.min.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <h1><a href="https://kastle-lab.org/aplo/lod/ontology#" target="_blank" rel="noopener">APLO Ontology</a></h1>
+
+      <dl class="dl-horizontal">
+        <dt>Title</dt>
+        <dd><a href="https://kastle-lab.org/aplo/lod/ontology#" target="_blank" rel="noopener">Adaptive Pedagogical Learning Orchestration (APLO) Ontology</a></dd>
+        <dt>URI</dt>
+        <dd><a href="https://kastle-lab.org/aplo/lod/ontology#" target="_blank" rel="noopener">https://kastle-lab.org/aplo/lod/ontology#</a></dd>
+        <dt>Source</dt>
+        <dd><a href="../ontology.owl">ontology.owl</a></dd>
+      </dl>
+
+      <p>
+        The following evaluation result was generated using
+        <a href="http://oops-ws.oeg-upm.net/" target="_blank" rel="noopener">the OOPS! RESTful web service</a>
+        provided by
+        <a href="http://oops.linkeddata.es" target="_blank" rel="noopener">OOPS! (OntOlogy Pitfall Scanner!)</a>.
+      </p>
+
+      <p>
+        <a href="http://oops.linkeddata.es" target="_blank" rel="noopener"><img src="evaluation/logoMini.png" alt="OOPS! logo" class="img-rounded img-responsive"></a>
+        OOPS! classifies reported pitfalls by critical, important, and minor impact levels.
+      </p>
+
+      <dl class="dl-horizontal">
+        <dt><span class="label label-danger">Critical</span></dt>
+        <dd>A pitfall that can affect ontology consistency, reasoning, or applicability.</dd>
+        <dt><span class="label label-warning">Important</span></dt>
+        <dd>A non-critical pitfall that should be corrected to improve ontology quality.</dd>
+        <dt><span class="label label-minor">Minor</span></dt>
+        <dd>A non-critical improvement to the ontology's presentation or reuse.</dd>
+      </dl>
+
+      <h2>Evaluation results</h2>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <section class="panel panel-default">
+          <div class="panel-heading" role="tab" id="result-heading">
+            <h3 class="panel-title">
+              <a data-toggle="collapse" href="#result" aria-expanded="true" aria-controls="result">
+                OOPS! evaluation summary
+                <span style="float: right;">No cases detected. <span class="label label-minor">No findings</span></span>
+              </a>
+            </h3>
+          </div>
+          <div id="result" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="result-heading">
+            <div class="panel-body">
+              <p>No ontology pitfalls were reported for the evaluated APLO ontology.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <div class="row">
+          <div class="col-md-7">
+            Developed with <a href="http://oops.linkeddata.es" target="_blank" rel="noopener">OOPS!</a><br>
+            Built with <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a><br>
+            Integrated with WIDOCO.
+          </div>
+          <div class="col-md-5">
+            <p class="text-right">Developed with:</p>
+            <p class="text-right"><a href="http://oops.linkeddata.es" target="_blank" rel="noopener"><img src="evaluation/logoMini.png" alt="OOPS! logo" class="img-rounded img-responsive"></a></p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

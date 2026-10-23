@@ -10,7 +10,7 @@
 @base <https://kastle-lab.org/aplo/lod/ontology#> .
 
 <https://kastle-lab.org/aplo/lod/ontology> rdf:type owl:Ontology ;
-                                            dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                            dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
                                             rdfs:comment "Merged ontology containing the evaluation, learner model, learning objective, and pedagogical framework patterns for autonomous learning orchestration." .
 
 #################################################################
