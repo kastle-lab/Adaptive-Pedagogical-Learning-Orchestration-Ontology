@@ -9,7 +9,7 @@ The Graph Store Protocol endpoint for that dataset is:
 
 Examples:
   python3 scripts/upload_ttls_to_fuseki.py
-  python3 scripts/upload_ttls_to_fuseki.py foundry/output/synthetic_sample_20260720-115511
+  python3 scripts/upload_ttls_to_fuseki.py materialization/materialized_instances
   python3 scripts/upload_ttls_to_fuseki.py --clear-first
   python3 scripts/upload_ttls_to_fuseki.py --graph-uri https://w3id.org/aplo/graph/synthetic-sample
   python3 scripts/upload_ttls_to_fuseki.py --user admin --password 'your-password'
@@ -102,7 +102,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "ttl_root",
         nargs="?",
-        help="Directory containing generated .ttl files. Defaults to materialization/, then latest foundry/output/synthetic_sample_*.",
+        help="Directory containing generated .ttl files. Defaults to materialization/materialized_instances/.",
     )
     parser.add_argument(
         "--base-url",

@@ -1,7 +1,7 @@
 # Synthetic Data
 Synthetic CSV rows used to instantiate APLO for validation and competency question examples.
 
-Each CSV corresponds to a matching YAML mapping in [foundry_mappings/synthetic_sample/](../foundry_mappings/synthetic_sample/) and a matching generated RDF folder in [materialization/](../materialization/).
+Each CSV corresponds to a matching YAML mapping in [foundry_mappings_for_synthetic_data/](../foundry_mappings_for_synthetic_data/) and a matching generated RDF folder in [materialized_instances/](../materialized_instances/).
 
 | Group | Files |
 | --- | --- |

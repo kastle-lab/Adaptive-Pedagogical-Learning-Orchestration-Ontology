@@ -1,6 +1,6 @@
-# Materialization
+# Materialized Instances
 
-Generated RDF/Turtle graph fragments created from [synthetic_data/](../synthetic_data/) using [foundry_mappings/](../foundry_mappings/).
+Generated RDF/Turtle graph fragments created from [synthetic_data/](../synthetic_data/) using [foundry_mappings_for_synthetic_data/](../foundry_mappings_for_synthetic_data/).
 
 Each subfolder corresponds to one source CSV and usually contains:
 

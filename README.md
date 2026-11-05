@@ -4,23 +4,20 @@ APLO takes its name from the Greek word `απλό` (`aplo`), meaning simple. APL
 This repository contains the ontology artifacts for the APLO ontology: schema, design notes, competency questions, axiom tables, synthetic data, mappings, and generated RDF used to document and validate the ontology.
 
 ## Key Resources
-- [Key notions](documentation/key-notions.md) describes the main concepts modeled by the ontology.
-- [Competency questions](documentation/competency-questions.md) lists the questions the ontology is intended to answer.
-- [Full schema PDF](schema/full-schema.pdf) provides a visual review of the complete schema.
+- [Key notions](design/key-notions.md) describes the main concepts modeled by the ontology.
+- [Competency questions](design/competency-questions.md) lists the questions the ontology is intended to answer.
 - [Full schema OWL](schema/full-schema.owl) is the aggregate OWL ontology artifact.
-- [Axioms CSV](axioms/axioms.csv) documents tabular axiom and constraint rationale.
-- [Materialization notes](materialization/README.md) describe the generated RDF/Turtle fragments.
+- [Axioms CSV](design/axioms.csv) documents tabular axiom and constraint rationale.
+- [Materialization notes](materialization/materialized_instances/README.md) describe the generated RDF/Turtle fragments.
 
 ## Repository Map
 | Directory | Intent |
 | --- | --- |
 | [schema/](schema/) | Holds the ontology itself and visual schema exports, including OWL, GraphML, and PDF views of the full ontology and its modules. |
-| [documentation/](documentation/) | Explains the design in paper-facing language: key notions, competency questions, and SPARQL-oriented CQ notes. |
-| [axioms/](axioms/) | Captures the tabular axiom and constraint rationale that supports the ontology specification. |
-| [synthetic_data/](synthetic_data/) | Provides synthetic CSV data used to instantiate the ontology for validation examples. |
-| [foundry_mappings/](foundry_mappings/) | Defines how each synthetic CSV file is mapped into RDF using the ontology vocabulary. |
-| [materialization/](materialization/) | Stores generated `.ttl` graph fragments used to inspect and validate instantiated APLO data. |
-| [scripts/](scripts/) | Contains helper scripts for exporting pattern summaries, generating OWL axioms, and uploading Turtle files. |
+| [design/](design/) | Explains the design: key notions, competency questions, SPARQL-oriented CQ notes, and axiom rationale. |
+| [materialization/](materialization/) | Provides synthetic CSV data used to instantiate the ontology for validation examples; how each synthetic CSV file is mapped into RDF; and `.ttl` graph fragments used to inspect and validate instantiated APLO data. |
+| [docs/](docs/) | Contains the generated Widoco ontology documentation. |
+| [scripts/](scripts/) | Contains helper scripts for generating OWL axioms and uploading Turtle files. |
 
 ## Namespaces
 | Prefix | Namespace |

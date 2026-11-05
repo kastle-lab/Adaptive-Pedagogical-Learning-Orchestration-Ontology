@@ -65,7 +65,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--axioms",
-        default="axioms/axioms.csv",
+        default="design/axioms.csv",
         type=Path,
         help="CSV file containing Subject, Predicate, Object, and Axioms applicable.",
     )

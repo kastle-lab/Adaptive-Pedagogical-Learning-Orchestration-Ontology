@@ -2,7 +2,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<..\index-en.html> a prov:Entity;
+<../index-en.html> a prov:Entity;
 	 dc:title "Adaptive Pedagogical Learning Orchestration (APLO) Ontology";
 	 prov:wasAttributedTo <https://orcid.org/0009-0000-2287-1198>;
 	 dc:creator <https://orcid.org/0009-0000-2287-1198>;
